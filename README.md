@@ -1,37 +1,52 @@
-# my_rf
 
-#### é¡¹ç›®ä»‹ç»
-æ¥å£è‡ªåŠ¨åŒ–æµ‹è¯•æ¡†æ¶
+¡¾¸üĞÂÀúÊ·¡¿
 
-#### è½¯ä»¶æ¶æ„
-è½¯ä»¶æ¶æ„è¯´æ˜
+2018-04-25 v1.2 ĞÂÔöÊı¾İ¿â²Ù×÷
 
+2018-04-24 v1.1 ĞÂÔöÈÕÖ¾µ÷ÊÔÈÕÖ¾£¬¿ÉÆÁÄ»ºÍÎÄ¼şÊä³öÈÕÖ¾
 
-#### å®‰è£…æ•™ç¨‹
-
-1. xxxx
-2. xxxx
-3. xxxx
-
-#### ä½¿ç”¨è¯´æ˜
-
-1. xxxx
-2. xxxx
-3. xxxx
-
-#### å‚ä¸è´¡çŒ®
-
-1. Fork æœ¬é¡¹ç›®
-2. æ–°å»º Feat_xxx åˆ†æ”¯
-3. æäº¤ä»£ç 
-4. æ–°å»º Pull Request
+2018-04-12 v1.0 »ù´¡°æ
 
 
-#### ç äº‘ç‰¹æŠ€
 
-1. ä½¿ç”¨ Readme\_XXX.md æ¥æ”¯æŒä¸åŒçš„è¯­è¨€ï¼Œä¾‹å¦‚ Readme\_en.md, Readme\_zh.md
-2. ç äº‘å®˜æ–¹åšå®¢ [blog.gitee.com](https://blog.gitee.com)
-3. ä½ å¯ä»¥ [https://gitee.com/explore](https://gitee.com/explore) è¿™ä¸ªåœ°å€æ¥äº†è§£ç äº‘ä¸Šçš„ä¼˜ç§€å¼€æºé¡¹ç›®
-4. [GVP](https://gitee.com/gvp) å…¨ç§°æ˜¯ç äº‘æœ€æœ‰ä»·å€¼å¼€æºé¡¹ç›®ï¼Œæ˜¯ç äº‘ç»¼åˆè¯„å®šå‡ºçš„ä¼˜ç§€å¼€æºé¡¹ç›®
-5. ç äº‘å®˜æ–¹æä¾›çš„ä½¿ç”¨æ‰‹å†Œ [http://git.mydoc.io/](http://git.mydoc.io/)
-6. ç äº‘å°é¢äººç‰©æ˜¯ä¸€æ¡£ç”¨æ¥å±•ç¤ºç äº‘ä¼šå‘˜é£é‡‡çš„æ ç›® [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+
+
+¡¾¹¦ÄÜ½éÉÜ¡¿
+
+bin: ¿ÉÖ´ĞĞÎÄ¼ş£¬³ÌĞòÈë¿Ú
+
+conf: ÅäÖÃÎÄ¼ş
+
+core: ºËĞÄÎÄ¼ş
+
+db_fix: Êı¾İ¿â²Ù×÷
+
+log: ÈÕÖ¾ÎÄ¼ş
+
+reprot: ²âÊÔ±¨¸æ
+
+test_case: ²âÊÔÓÃÀı£¨Êı¾İÎÄ¼ş£©£¬# testSelect.pyÎÄ¼şÓÃÀı¶ÔÓ¦µÄmockÏîÄ¿µØÖ·£ºhttps://github.com/UncleYong/mock_test
+
+README.md: ËµÃ÷ÎÄ¼ş
+
+
+
+
+
+¡¾´ıÀ©Õ¹¡¿
+
+
+¼¯³Éjenkins
+
+
+Èç¹û½Å±¾ÔÚ£ºC:\zt2
+
+jenkinsÃüÁî£º
+
+    windowsÏÂ£ºpython3 C:\zt2\bin\my_run.py %BUILD_NUMBER%
+
+    linuxÏÂ£ºpython3 /opt/py_code/2/zt2/bin/my_run.py $BUILD_NUMBER
+
+Êä³öµÄ±¨¸æÃû³ÆÎª£º¡¾6¡¿2017-09-11_09_09_56_report.html
+
+
