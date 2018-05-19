@@ -3,8 +3,9 @@
 # @Time    : 2018/4/24 22:59
 # @Author  : wengy
 # @Email   : 1915992513@qq.com
-# @Blog    : http://www.cnblogs.com/UncleYong/
+# @Blog    : http://www.cnblogs.com/UncleYong
 # @GitHub  : https://github.com/UncleYong
+# @Gitee   : https://gitee.com/UncleYong
 
 import os
 import sys
