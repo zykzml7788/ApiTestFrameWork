@@ -27,14 +27,12 @@ def init_data():
 @app.route('/api/user')
 def get_all_users():
     print(type(jsonify(g.data)))
-    # return jsonify(g.data)
     return jsonify({"code": "00", "msg": g.data})
 
 
 @app.route('/api/user/<int:user_id>')
 def get_user(user_id):
     if user_id > 0 and user_id <= len(g.data):
-        # return jsonify(g.data[user_id-1])
         return jsonify({"code": "00", "msg": g.data[user_id - 1]})
     else:
         return jsonify(g.user_does_not_exist)
