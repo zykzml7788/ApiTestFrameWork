@@ -2,7 +2,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>**项目测试报告</title>
+    <title>**项目接口自动化测试报告</title>
     <meta name="generator" content="HTMLTestRunner 0.8.2"/>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
@@ -190,12 +190,12 @@ function showOutput(id, name) {
 --></script>
 
 <div class='heading'>
-<h1>**项目测试报告</h1>
-<p class='attribute'><strong>开始时间:</strong> 2018-04-13 18:04:39</p>
-<p class='attribute'><strong>运行时长:</strong> 0:00:00.027001</p>
-<p class='attribute'><strong>状态:</strong> 通过 6 失败 1</p>
+<h1>**项目接口自动化测试报告</h1>
+<p class='attribute'><strong>开始时间:</strong> 2019-04-03 17:22:43</p>
+<p class='attribute'><strong>运行时长:</strong> 0:00:00.087005</p>
+<p class='attribute'><strong>状态:</strong> 通过 16 失败 4</p>
 
-<p class='description'>测试报告可通过本机访问测试服务器查看，地址：http://&lt;测试服务器IP&gt;:8000/</p>
+<p class='description'>测试报告也可访问测试服务器查看，地址：http://&lt;测试服务器IP&gt;:8000/</p>
 </div>
 
 
@@ -223,17 +223,17 @@ function showOutput(id, name) {
     <td>查看</td>
 </tr>
 
-<tr class='failClass'>
-    <td>testAdd.MyCacl</td>
-    <td>3</td>
-    <td>2</td>
-    <td>1</td>
+<tr class='passClass'>
+    <td>test_用户管理_查询用户.SelectMock</td>
+    <td>4</td>
+    <td>4</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c1',3)">详情</a></td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1',4)">详情</a></td>
 </tr>
 
 <tr id='pt1.1' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_int_float: 整数加小数</div></td>
+    <td class='none'><div class='testcase'>test_select_all: 查询所有</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
@@ -259,7 +259,7 @@ pt1.1: 测试用例开始执行...
 </tr>
 
 <tr id='pt1.2' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_int_int: 整数加整数</div></td>
+    <td class='none'><div class='testcase'>test_select_one_exist_first: 查询一个存在的</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
@@ -284,27 +284,23 @@ pt1.2: 测试用例开始执行...
     </td>
 </tr>
 
-<tr id='ft1.3' class='none'>
-    <td class='failCase'><div class='testcase'>test_int_negativeNumber: 整数加负数</div></td>
+<tr id='pt1.3' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_select_one_exist_last: 查询一个存在的</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.3')" >
-        失败</a>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.3')" >
+        通过</a>
 
-    <div id='div_ft1.3' class="popup_window">
+    <div id='div_pt1.3' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.3').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.3').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-ft1.3: 测试用例开始执行...
+pt1.3: 测试用例开始执行...
 测试用例执行完成...
-Traceback (most recent call last):
-  File "E:\my_rf\test_case\testAdd.py", line 52, in test_int_negativeNumber
-    self.assertEqual(res, 4)
-AssertionError: -4 != 4
 
 
         </pre>
@@ -314,84 +310,70 @@ AssertionError: -4 != 4
     </td>
 </tr>
 
-<tr class='passClass'>
-    <td>testSelect.SelectMock</td>
+<tr id='pt1.4' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_select_one_notExist: 查询一个不存在的</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.4')" >
+        通过</a>
+
+    <div id='div_pt1.4' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.4').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.4: 测试用例开始执行...
+测试用例执行完成...
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr class='failClass'>
+    <td>test_计算器_减法.MyCacl</td>
     <td>4</td>
-    <td>4</td>
-    <td>0</td>
+    <td>3</td>
+    <td>1</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c2',4)">详情</a></td>
 </tr>
 
 <tr id='pt2.1' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_select_all: 查询所有</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.1')" >
-        通过</a>
-
-    <div id='div_pt2.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-pt2.1: 测试用例开始执行...
-测试用例执行完成...
-
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
+    <td class='none'><div class='testcase'>test_int_float: 整数减小数</div></td>
+    <td colspan='5' align='center'>通过</td>
 </tr>
 
 <tr id='pt2.2' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_select_one_exist_first: 查询一个存在的</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.2')" >
-        通过</a>
-
-    <div id='div_pt2.2' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.2').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-pt2.2: 测试用例开始执行...
-测试用例执行完成...
-
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
+    <td class='none'><div class='testcase'>test_int_int: 整数减整数</div></td>
+    <td colspan='5' align='center'>通过</td>
 </tr>
 
-<tr id='pt2.3' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_select_one_exist_last: 查询一个存在的</div></td>
+<tr id='ft2.3' class='none'>
+    <td class='failCase'><div class='testcase'>test_int_letter: 整数减字母</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.3')" >
-        通过</a>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft2.3')" >
+        失败</a>
 
-    <div id='div_pt2.3' class="popup_window">
+    <div id='div_ft2.3' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.3').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft2.3').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-pt2.3: 测试用例开始执行...
-测试用例执行完成...
+ft2.3: Traceback (most recent call last):
+  File "D:\zookeeper\zookeeper-3.3.6\gee\my_rf\test_case\test_计算器_减法.py", line 85, in test_int_letter
+    self.assertEqual(res, -4)
+AssertionError: '类型错误' != -4
 
 
         </pre>
@@ -402,22 +384,145 @@ pt2.3: 测试用例开始执行...
 </tr>
 
 <tr id='pt2.4' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_select_one_notExist: 查询一个不存在的</div></td>
+    <td class='none'><div class='testcase'>test_int_negativeNumber: 整数减负数</div></td>
+    <td colspan='5' align='center'>通过</td>
+</tr>
+
+<tr class='failClass'>
+    <td>test_计算器_加法.MyCacl2</td>
+    <td>12</td>
+    <td>9</td>
+    <td>3</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c3',12)">详情</a></td>
+</tr>
+
+<tr id='pt3.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_cacl_0</div></td>
+    <td colspan='5' align='center'>通过</td>
+</tr>
+
+<tr id='pt3.2' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_cacl_1</div></td>
+    <td colspan='5' align='center'>通过</td>
+</tr>
+
+<tr id='ft3.3' class='none'>
+    <td class='failCase'><div class='testcase'>test_cacl_10</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.4')" >
-        通过</a>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft3.3')" >
+        失败</a>
 
-    <div id='div_pt2.4' class="popup_window">
+    <div id='div_ft3.3' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.4').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft3.3').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-pt2.4: 测试用例开始执行...
-测试用例执行完成...
+ft3.3: Traceback (most recent call last):
+  File "C:\Python36\lib\site-packages\parameterized\parameterized.py", line 392, in standalone_func
+    return func(*(a + p.args), **p.kwargs)
+  File "D:\zookeeper\zookeeper-3.3.6\gee\my_rf\test_case\test_计算器_加法.py", line 57, in test_cacl
+    self.assertEqual(res, c)
+AssertionError: '类型错误' != 1
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft3.4' class='none'>
+    <td class='failCase'><div class='testcase'>test_cacl_11</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft3.4')" >
+        失败</a>
+
+    <div id='div_ft3.4' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft3.4').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft3.4: Traceback (most recent call last):
+  File "C:\Python36\lib\site-packages\parameterized\parameterized.py", line 392, in standalone_func
+    return func(*(a + p.args), **p.kwargs)
+  File "D:\zookeeper\zookeeper-3.3.6\gee\my_rf\test_case\test_计算器_加法.py", line 57, in test_cacl
+    self.assertEqual(res, c)
+AssertionError: '类型错误' != 1
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt3.5' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_cacl_2</div></td>
+    <td colspan='5' align='center'>通过</td>
+</tr>
+
+<tr id='pt3.6' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_cacl_3</div></td>
+    <td colspan='5' align='center'>通过</td>
+</tr>
+
+<tr id='pt3.7' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_cacl_4</div></td>
+    <td colspan='5' align='center'>通过</td>
+</tr>
+
+<tr id='pt3.8' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_cacl_5</div></td>
+    <td colspan='5' align='center'>通过</td>
+</tr>
+
+<tr id='pt3.9' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_cacl_6</div></td>
+    <td colspan='5' align='center'>通过</td>
+</tr>
+
+<tr id='pt3.10' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_cacl_7</div></td>
+    <td colspan='5' align='center'>通过</td>
+</tr>
+
+<tr id='pt3.11' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_cacl_8</div></td>
+    <td colspan='5' align='center'>通过</td>
+</tr>
+
+<tr id='ft3.12' class='none'>
+    <td class='failCase'><div class='testcase'>test_cacl_9</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft3.12')" >
+        失败</a>
+
+    <div id='div_ft3.12' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft3.12').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft3.12: Traceback (most recent call last):
+  File "C:\Python36\lib\site-packages\parameterized\parameterized.py", line 392, in standalone_func
+    return func(*(a + p.args), **p.kwargs)
+  File "D:\zookeeper\zookeeper-3.3.6\gee\my_rf\test_case\test_计算器_加法.py", line 57, in test_cacl
+    self.assertEqual(res, c)
+AssertionError: '类型错误' != 1
 
 
         </pre>
@@ -429,9 +534,9 @@ pt2.4: 测试用例开始执行...
 
 <tr id='total_row'>
     <td>总计</td>
-    <td>7</td>
-    <td class="text text-success">6</td>
-    <td class="text text-danger">1</td>
+    <td>20</td>
+    <td class="text text-success">16</td>
+    <td class="text text-danger">4</td>
     <td class="text text-warning">0</td>
     <td>&nbsp;</td>
 </tr>

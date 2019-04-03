@@ -1,11 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # @Time    : 2018/4/24 22:59
-# @Author  : wengy
-# @Email   : 1915992513@qq.com
+# @Author  : uncleyong
 # @Blog    : http://www.cnblogs.com/UncleYong
-# @GitHub  : https://github.com/UncleYong
 # @Gitee   : https://gitee.com/UncleYong
+# @QQ交流群 : 66719336
 
 
 import sys
@@ -40,7 +39,8 @@ class GetCurrentItems(object):
 p = GetCurrentItems()    
 # p2 = GetCurrentItems()   
 # p3 = GetCurrentItems() 
-# print(p,p2,p3)         
+# print(p,p2,p3) 
+# print(p)        
 
     
 

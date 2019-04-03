@@ -1,13 +1,16 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # @Time    : 2018/4/24 22:59
-# @Author  : wengy
-# @Email   : 1915992513@qq.com
+# @Author  : uncleyong
 # @Blog    : http://www.cnblogs.com/UncleYong
-# @GitHub  : https://github.com/UncleYong
 # @Gitee   : https://gitee.com/UncleYong
+# @QQ交流群 : 66719336
 
-
+import os
+import sys
+path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# print(path)
+sys.path.insert(0, path)
 import logging
 from logging import handlers
 from conf.settings import LOG_PATH

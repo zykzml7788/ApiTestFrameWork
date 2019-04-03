@@ -1,11 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # @Time    : 2018/4/24 22:59
-# @Author  : wengy
-# @Email   : 1915992513@qq.com
+# @Author  : uncleyong
 # @Blog    : http://www.cnblogs.com/UncleYong
-# @GitHub  : https://github.com/UncleYong
 # @Gitee   : https://gitee.com/UncleYong
+# @QQ交流群 : 66719336
 
 
 import os,sys
@@ -19,7 +18,7 @@ import inspect
 from core.tools import p
 
 def cacl(a, b):
-    return a+b
+    return a-b
 
 
 class MyCacl(unittest.TestCase):
@@ -58,26 +57,26 @@ class MyCacl(unittest.TestCase):
         return inspect.stack()[1][3]
 
     def test_int_int(self):
-        """整数加整数"""
+        """整数减整数"""
         res = cacl(1, 1)
         logger.logger.logger.debug('当前方法: %s'%p.get_current_function_name())
         logger.logger.logger.debug('是测试点"%s"下的用例"%s",返回的结果res=%s]'%(self.__class__.__name__, getattr(self, p.get_current_function_name()).__doc__, res))
-        self.assertEqual(res, 2)
+        self.assertEqual(res, 0)
 
     def test_int_float(self):
-        """整数加小数"""
-        res = cacl(1, 2.8)
+        """整数减小数"""
+        res = cacl(10, 2.8)
         logger.logger.logger.debug('是测试点"%s"下的用例"%s",返回的结果res=%s]'%(self.__class__.__name__, getattr(self, p.get_current_function_name()).__doc__, res))
-        self.assertEqual(res, 3.8)
+        self.assertEqual(res, 7.2)
 
     def test_int_negativeNumber(self):
-        """整数加负数"""
+        """整数减负数"""
         res = cacl(1, -5)
         logger.logger.logger.debug('是测试点"%s"下的用例"%s",返回的结果res=%s]'%(self.__class__.__name__, getattr(self, p.get_current_function_name()).__doc__, res))
-        self.assertEqual(res, -4)
+        self.assertEqual(res, 6)
 
     def test_int_letter(self):
-        """整数加字母"""
+        """整数减字母"""
         try:
             res = cacl(1, 'a')
         except TypeError as e:
@@ -92,7 +91,7 @@ if __name__ == '__main__':
     suit.addTest(MyCacl("test_int_negativeNumber"))
     suit.addTest(MyCacl("test_int_letter"))
     fp = open("./report.html","wb")
-    runner = HTMLTestRunner.HTMLTestRunner(stream=fp, title=u'**项目测试报告',description=u'测试结果')
+    runner = HTMLTestRunner.HTMLTestRunner(stream=fp, title=u'**项目接口自动化测试报告',description=u'**项目接口自动化测试报告')
     runner.run(suit)
     fp.close()
 #

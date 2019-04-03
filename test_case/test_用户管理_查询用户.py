@@ -1,11 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # @Time    : 2018/4/24 22:59
-# @Author  : wengy
-# @Email   : 1915992513@qq.com
+# @Author  : uncleyong
 # @Blog    : http://www.cnblogs.com/UncleYong
-# @GitHub  : https://github.com/UncleYong
 # @Gitee   : https://gitee.com/UncleYong
+# @QQ交流群 : 66719336
 
 
 # mock项目地址：https://github.com/UncleYong/mock_test
@@ -39,7 +38,8 @@ class SelectMock(unittest.TestCase):
         try:
             res = requests.get(url=url).json()
         except Exception as e:
-            res = '连接错误。'
+            # res = '连接错误。'
+            res = {'code':'999','msg':'连接错误。'}
         # print(res,type(res))
         logger.logger.logger.debug('是测试点"%s"下的用例"%s",返回的结果res=%s]'%(self.__class__.__name__, getattr(self, self.get_current_function_name()).__doc__, res))
         
@@ -51,7 +51,8 @@ class SelectMock(unittest.TestCase):
         try:
             res = requests.get(url=url).json()
         except Exception as e:
-            res = '连接错误。'
+            # res = '连接错误。'
+            res = {'code':'999','msg':'连接错误。'}
         # print(res,type(res))
         logger.logger.logger.debug('是测试点"%s"下的用例"%s",返回的结果res=%s]'%(self.__class__.__name__, getattr(self, self.get_current_function_name()).__doc__, res))
         
@@ -63,7 +64,8 @@ class SelectMock(unittest.TestCase):
         try:
             res = requests.get(url=url).json()
         except Exception as e:
-            res = '连接错误。'
+            # res = '连接错误。'
+            res = {'code':'999','msg':'连接错误。'}
         # print(res,type(res))
         logger.logger.logger.debug('是测试点"%s"下的用例"%s",返回的结果res=%s]'%(self.__class__.__name__, getattr(self, self.get_current_function_name()).__doc__, res))
         
@@ -75,7 +77,8 @@ class SelectMock(unittest.TestCase):
         try:
             res = requests.get(url=url).json()
         except Exception as e:
-            res = '连接错误。'
+            # res = '连接错误。'
+            res = {'code':'999','msg':'连接错误。'}
         # print(res,type(res))
         logger.logger.logger.debug('是测试点"%s"下的用例"%s",返回的结果res=%s]'%(self.__class__.__name__, getattr(self, self.get_current_function_name()).__doc__, res))
         
@@ -89,7 +92,7 @@ if __name__ == '__main__':
     suit.addTest(SelectMock("test_select_one_exist_last"))
     suit.addTest(SelectMock("test_select_one_notExist"))
     fp = open("./report.html","wb")
-    runner = HTMLTestRunner.HTMLTestRunner(stream=fp, title=u'**项目测试报告',description=u'测试结果')
+    runner = HTMLTestRunner.HTMLTestRunner(stream=fp, title=u'**项目接口自动化测试报告',description=u'**项目接口自动化测试报告')
     runner.run(suit)
     fp.close()
 
