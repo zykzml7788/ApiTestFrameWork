@@ -1,85 +1,87 @@
-¡¾ËµÃ÷¡¿
+my_rfæ˜¯my_robotframeworkçš„ç®€å†™ã€‚
 
-0.Ç°ÖÃÖªÊ¶´¢±¸£ºÐèÒªpython»ù´¡£¬¿ÉÒÔ²Î¿¼£ºhttps://www.cnblogs.com/UncleYong/category/1188224.html
+ã€è¯´æ˜Žã€‘
 
-1.test_caseÏÂµÄÓÃÀýÖ»ÊÇ¼òµ¥ÑÝÊ¾£¬²¢Ã»ÓÐÓÃµ½Õâ¸ö¿ò¼ÜÖÐµÄËùÓÐ¹¦ÄÜÄ£¿é£¬±ÈÈç·â×°µÄdb_operate.py¡¢redis_operate.pyµÈ¶¼Ã»ÓÃµ½¡£
+0.å‰ç½®çŸ¥è¯†å‚¨å¤‡ï¼šéœ€è¦pythonåŸºç¡€ï¼Œå¯ä»¥å‚è€ƒï¼šhttps://www.cnblogs.com/UncleYong/category/1188224.html
 
-2.Êý¾Ý·ÖÀë£¬¿ÉÒÔ·ÖÀëµ½excelÖÐ£¬´ó¼Ò¾Í×Ô¼º·¢»ÓÓÅ»¯°É£¬^_^
+1.test_caseä¸‹çš„ç”¨ä¾‹åªæ˜¯ç®€å•æ¼”ç¤ºï¼Œå¹¶æ²¡æœ‰ç”¨åˆ°è¿™ä¸ªæ¡†æž¶ä¸­çš„æ‰€æœ‰åŠŸèƒ½æ¨¡å—ï¼Œæ¯”å¦‚å°è£…çš„db_operate.pyã€redis_operate.pyç­‰éƒ½æ²¡ç”¨åˆ°ã€‚
 
-
-
-¡¾¸üÐÂÀúÊ·¡¿
-
-2019-04-03 v1.4 Ôö¼Ó¿É¶ÁÐÔµÄÓÅ»¯ºÍmockserver
-
-2018-05-17 v1.3 ÓÅ»¯redis²Ù×÷
-
-2018-04-25 v1.2 ÐÂÔöoracleÊý¾Ý¿â²Ù×÷
-
-2018-04-24 v1.1 ÐÂÔöÈÕÖ¾µ÷ÊÔÈÕÖ¾£¬¿ÉÆÁÄ»ºÍÎÄ¼þÊä³öÈÕÖ¾
-
-2018-04-12 v1.0 »ù´¡°æ
+2.æ•°æ®åˆ†ç¦»ï¼Œå¯ä»¥åˆ†ç¦»åˆ°excelä¸­ï¼Œå¤§å®¶å°±è‡ªå·±å‘æŒ¥ä¼˜åŒ–å§ï¼Œ^_^
 
 
 
-¡¾»·¾³Ä£¿éËµÃ÷¡¿
+ã€æ›´æ–°åŽ†å²ã€‘
+
+2019-04-03 v1.4 å¢žåŠ å¯è¯»æ€§çš„ä¼˜åŒ–å’Œmockserver
+
+2018-05-17 v1.3 ä¼˜åŒ–redisæ“ä½œ
+
+2018-04-25 v1.2 æ–°å¢žoracleæ•°æ®åº“æ“ä½œ
+
+2018-04-24 v1.1 æ–°å¢žæ—¥å¿—è°ƒè¯•æ—¥å¿—ï¼Œå¯å±å¹•å’Œæ–‡ä»¶è¾“å‡ºæ—¥å¿—
+
+2018-04-12 v1.0 åŸºç¡€ç‰ˆ
+
+
+
+ã€çŽ¯å¢ƒæ¨¡å—è¯´æ˜Žã€‘
 
 python3.6 + requests + unittest + cx_oracle + HTMLTestRunner + os + sys + json + time + redis
 
-1.Python3.6£¬½âÊÍÆ÷»·¾³
+1.Python3.6ï¼Œè§£é‡Šå™¨çŽ¯å¢ƒ
 
-2.requests£¬Ä£ÄâÓÃ»§·¢ËÍhttpÐ­Òéget»òÕßpostÀàÐÍÇëÇó
+2.requestsï¼Œæ¨¡æ‹Ÿç”¨æˆ·å‘é€httpåè®®getæˆ–è€…postç±»åž‹è¯·æ±‚
 
-3.unittest£¬×éÖ¯ÔËÐÐ²âÊÔÓÃÀý
+3.unittestï¼Œç»„ç»‡è¿è¡Œæµ‹è¯•ç”¨ä¾‹
 
-4.cx_oracle£¬²Ù×÷Êý¾Ý¿â£¬Ã¿´ÎÇëÇóÇ°£¬Á¬½ÓÊý¾Ý¿â£¬Çå³ýÀ¬»øÊý¾Ý£¬³õÊ¼»¯²âÊÔÊý¾Ý£¨Èç¹ûÊÇmysql£¬Ò»ÑùµÄË¼Â·£¬Ä£¿éÊÇpymysql£©
+4.cx_oracleï¼Œæ“ä½œæ•°æ®åº“ï¼Œæ¯æ¬¡è¯·æ±‚å‰ï¼Œè¿žæŽ¥æ•°æ®åº“ï¼Œæ¸…é™¤åžƒåœ¾æ•°æ®ï¼Œåˆå§‹åŒ–æµ‹è¯•æ•°æ®ï¼ˆå¦‚æžœæ˜¯mysqlï¼Œä¸€æ ·çš„æ€è·¯ï¼Œæ¨¡å—æ˜¯pymysqlï¼‰
 
-5.HTMLTestRunner£¬Éú³Éhtml¸ñÊ½±¨¸æÄ£°å
+5.HTMLTestRunnerï¼Œç”Ÿæˆhtmlæ ¼å¼æŠ¥å‘Šæ¨¡æ¿
 
-6.os£¬»ñÈ¡Â·¾¶
+6.osï¼ŒèŽ·å–è·¯å¾„
 
-7.sys£¬ÉèÖÃ»·¾³±äÁ¿
+7.sysï¼Œè®¾ç½®çŽ¯å¢ƒå˜é‡
 
-8.json£¬¶Ô·þÎñÆ÷·µ»ØµÄ×Ö·û´®×ª»»Îª×Öµä£¬·½±ã×ö¶ÏÑÔ
+8.jsonï¼Œå¯¹æœåŠ¡å™¨è¿”å›žçš„å­—ç¬¦ä¸²è½¬æ¢ä¸ºå­—å…¸ï¼Œæ–¹ä¾¿åšæ–­è¨€
 
-9.time£¬Ê±¼ä´Á£¬Éú³ÉµÄ±¨¸æÃû³ÆÊÇ£ºtime_report.html
+9.timeï¼Œæ—¶é—´æˆ³ï¼Œç”Ÿæˆçš„æŠ¥å‘Šåç§°æ˜¯ï¼štime_report.html
 
-10.redis£¬²Ù×÷redisÔö¼Ó¶ÌÐÅÑéÖ¤Âë£¬Ä£Äâ»ñÈ¡¶ÌÐÅÑéÖ¤Âë
-
-
-
-
-¡¾¿ò¼ÜÄ¿Â¼½á¹¹½éÉÜ¡¿
-
-bin: ¿ÉÖ´ÐÐÎÄ¼þ£¬³ÌÐòÈë¿Ú
-
-conf: ÅäÖÃÎÄ¼þ
-
-core: ºËÐÄÎÄ¼þ
-
-db_fix: Êý¾Ý¿â²Ù×÷
-
-log: ÈÕÖ¾ÎÄ¼þ
-
-mockserver£º²âÊÔÓÃÀýÐèÒªÓÃµ½µÄmock·þÎñ
-
-reprot: ²âÊÔ±¨¸æ
-
-test_case: ²âÊÔÓÃÀý£¨Êý¾ÝÎÄ¼þ£©£¬# testSelect.pyÎÄ¼þÓÃÀý¶ÔÓ¦µÄmockÏîÄ¿ÔÚmockserverÄ¿Â¼ÏÂ
-
-README.md: ËµÃ÷ÎÄ¼þ
+10.redisï¼Œæ“ä½œrediså¢žåŠ çŸ­ä¿¡éªŒè¯ç ï¼Œæ¨¡æ‹ŸèŽ·å–çŸ­ä¿¡éªŒè¯ç 
 
 
 
-¡¾´ýÀ©Õ¹¹¦ÄÜ¡¿
 
-¼¯³Éjenkins£¬jenkinsÖÐÖ´ÐÐÃüÁî£º
+ã€æ¡†æž¶ç›®å½•ç»“æž„ä»‹ç»ã€‘
 
-    windows»·¾³ÏÂ£¬Èç¹û½Å±¾ÔÚ£ºC:\test£¬Ö´ÐÐpython3 C:\test\bin\my_run.py %BUILD_NUMBER%
+bin: å¯æ‰§è¡Œæ–‡ä»¶ï¼Œç¨‹åºå…¥å£
 
-    linux»·¾³ÏÂ£¬Èç¹û½Å±¾ÔÚ£ºC:\test£¬Ö´ÐÐpython3 /opt/my_rf/bin/my_run.py $BUILD_NUMBER
+conf: é…ç½®æ–‡ä»¶
 
-	Êä³öµÄ±¨¸æÃû³ÆÎª£º¡¾6¡¿2017-09-11_09_09_56_report.html£¬×îÇ°ÃæµÄÊý×ÖÎªµÚ¶àÉÙ´Î¹¹½¨
+core: æ ¸å¿ƒæ–‡ä»¶
+
+db_fix: æ•°æ®åº“æ“ä½œ
+
+log: æ—¥å¿—æ–‡ä»¶
+
+mockserverï¼šæµ‹è¯•ç”¨ä¾‹éœ€è¦ç”¨åˆ°çš„mockæœåŠ¡
+
+reprot: æµ‹è¯•æŠ¥å‘Š
+
+test_case: æµ‹è¯•ç”¨ä¾‹ï¼ˆæ•°æ®æ–‡ä»¶ï¼‰ï¼Œ# testSelect.pyæ–‡ä»¶ç”¨ä¾‹å¯¹åº”çš„mocké¡¹ç›®åœ¨mockserverç›®å½•ä¸‹
+
+README.md: è¯´æ˜Žæ–‡ä»¶
+
+
+
+ã€å¾…æ‰©å±•åŠŸèƒ½ã€‘
+
+é›†æˆjenkinsï¼Œjenkinsä¸­æ‰§è¡Œå‘½ä»¤ï¼š
+
+    windowsçŽ¯å¢ƒä¸‹ï¼Œå¦‚æžœè„šæœ¬åœ¨ï¼šC:\testï¼Œæ‰§è¡Œpython3 C:\test\bin\my_run.py %BUILD_NUMBER%
+
+    linuxçŽ¯å¢ƒä¸‹ï¼Œå¦‚æžœè„šæœ¬åœ¨ï¼šC:\testï¼Œæ‰§è¡Œpython3 /opt/my_rf/bin/my_run.py $BUILD_NUMBER
+
+	è¾“å‡ºçš„æŠ¥å‘Šåç§°ä¸ºï¼šã€6ã€‘2017-09-11_09_09_56_report.htmlï¼Œæœ€å‰é¢çš„æ•°å­—ä¸ºç¬¬å¤šå°‘æ¬¡æž„å»º
 
 	
 
