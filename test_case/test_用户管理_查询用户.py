@@ -34,6 +34,7 @@ class SelectMock(unittest.TestCase):
     def test_select_all(self):
         """查询所有"""
         logger.logger.logger.debug('当前方法: %s'%p.get_current_function_name())
+        # 优化：ip端口可以放到配置中
         url = 'http://127.0.0.1:5000/api/user'
         try:
             res = requests.get(url=url).json()
