@@ -1,9 +1,9 @@
 # 接口自动化框架         作者:楷楷
 
 ## 项目说明
-- 本框架是为了快速实现http/https协议而设计的一套数据驱动自动化接口框架,基于EXCEL+requests+unittest+ddt设计,pytest作为执行器,本框架无需你使用代码编写用例,那你可能
+- 本框架是为了快速实现**http/https**协议而设计的一套数据驱动自动化接口框架,基于**EXCEL+requests+unittest+ddt**设计,**pytest**作为执行器,本框架无需你使用代码编写用例,那你可能
 会担心万一有接口之间相互依赖,或者说需要登入的token等之类的接口,该如何编写用例,在这里告诉你们笨框架已经完美解决此问题,所有的一切将在EXCEL中进行！！本框架实现了在EXCEL中
-进行接口用例编写,接口关联,接口断言,还有很重要的一点,实现了类似jmeter函数助手的功能,譬如生成UUID,随机定长字符串,格式化日期,正则表达式等,只需要你在EXCCEL中使用特殊的写法就能够使用这些函数啦~~是不是很期待！！
+进行**接口用例编写,接口关联,接口断言**,还有很重要的一点,实现了类似**jmeter函数助手**的功能,譬如生成UUID,随机定长字符串,格式化日期,正则表达式等,只需要你在EXCCEL中使用特殊的写法就能够使用这些函数啦~~是不是很期待！！
 
 
 ## 技术栈
@@ -18,10 +18,10 @@
 
 ## 环境部署
 - 解压压缩包，使用pycharm打开项目文件
-- 进入File - Settings - Project - Project Interpreter,选择项目中的 ApiTestFrameWork/venv 作为虚拟环境,若无法使用,可以尝试新增虚拟环境后,在控制台cd到venv/Scripts下,使用命令pip install -r requirements.txt文件所在的绝对路径（在项目根目录）,一条命令安装好所有依赖环境,你要做的就是慢慢等它装好
+- 进入**File - Settings - Project - Project Interpreter**,选择项目中的 **ApiTestFrameWork/venv** 作为虚拟环境,若无法使用,可以尝试新增虚拟环境后,在控制台cd到**venv/Scripts**下,使用命令**pip install -r requirements.txt**文件所在的绝对路径（在项目根目录）,一条命令安装好所有依赖环境,你要做的就是慢慢等它装好
 - 验证环境是否安装完毕
-- File - Settings - Tools - Python Integrated Tools - Default Test Runner选择py.test
-- 执行runCase.py,观察结果是否成功,excel中有一条访问百度的用例,可以看看执行结果百度是否访问成功
+- **File - Settings - Tools - Python Integrated Tools - Default Test Runner**选择**py.test**
+- 执行**runCase.py**,观察结果是否成功,excel中有一条访问百度的用例,可以看看执行结果百度是否访问成功
 - 查看report下是否有测试报告生成
 
 ## 项目结构说明
@@ -37,24 +37,24 @@
 - READMD.md ============> 项目说明文档
 
 ## EXCEL字段说明
-- description:用例描述
-- url:接口地址
-- method:请求方式(目前只支持GET,POST)
-- headers:请求头,格式为 {"key","value"}
-- cookies:Cookies就是Cookies啦,格式为 {"key":"value"}
-- params:请求参数,注意是参数而不是请求体,类似url后拼接的?key=value&key=value,格式为 {"key":"value"}
-- body:请求体,格式为 {"key":"value"}
-- verify:断言,格式为  JSONPATH=预期结果 
-- saves:关联,格式为 自定义key=JSONPATH
+- **description**:用例描述
+- **url**:接口地址
+- **method**:请求方式(目前只支持GET,POST)
+- **headers**:请求头,格式为 {"key","value"}
+- **cookies**:Cookies就是Cookies啦,格式为 {"key":"value"}
+- **params**:请求参数,注意是参数而不是请求体,类似url后拼接的?key=value&key=value,格式为 {"key":"value"}
+- **body**:请求体,格式为 {"key":"value"}
+- **verify**:断言,格式为  JSONPATH=预期结果 
+- **saves**:关联,格式为 自定义key=JSONPATH
 
 ## 关联详解
 - 公共参数池:意思就是你可以存储接口的响应值到参数池中,以便后续接口使用
-- 如何将响应字段存到参数池:在EXCEL中saves列,使用格式形如 key=JSONPATH  填写,支持多字段存储,使用英文分号隔开 , 举栗子:id=$.object.id;code=$.code
+- 如何将响应字段存到参数池:在EXCEL中saves列,使用格式形如 **key=JSONPATH**  填写,支持多字段存储,使用英文分号隔开 , 举栗子:**id=$.object.id;code=$.code**
 学过jmeter的朋友们应该知道,类似里面的jsonpath提取器
-- 下个接口如何使用已经存储的参数:在下个接口入参中使用形如  ${key} 的格式,提取参数池中的key对应的value即可,当然你必须保证前面的用例已经存储过该key
+- 下个接口如何使用已经存储的参数:在下个接口入参中使用形如  **${key}** 的格式,提取参数池中的key对应的value即可,当然你必须保证前面的用例已经存储过该key
 
 ## 断言详解
-- 在verify中填写形如  JSONPATH=预期结果 ,框架会根据该JSONPATH从响应JSON中提取目标字段,和预期结果进行比对,同样支持多断言,举栗子:$.msg=操作成功;$.code=100000
+- 在verify中填写形如  **JSONPATH=预期结果** ,框架会根据该JSONPATH从响应JSON中提取目标字段,和预期结果进行比对,同样支持多断言,举栗子:**$.msg=操作成功;$.code=100000**
 
 ## 函数助手详解
 - 说明:函数助手是来自Jmeter的一个概念,有了它意味着你能在EXCEL中使用某些函数动态的生成某些数据,如随机定长字符,格式化日期,UUID,正则表达式等等
