@@ -1,0 +1,30 @@
+Metadata-Version: 1.1
+Name: jsonpath
+Version: 0.81
+Summary: An XPath for JSON
+Home-page: http://www.ultimate.com/phil/python/#jsonpath
+Author: Phil Budne
+Author-email: phil@ultimate.com
+License: MIT
+Download-URL: http://www.ultimate.com/phil/python/download/jsonpath-0.81.tar.gz
+Description: A port of the Perl, and JavaScript versions of JSONPath
+        see http://goessner.net/articles/JsonPath/
+        
+        Based on on JavaScript version by Stefan Goessner at:
+                https://goessner.net/articles/JsonPath/
+                http://code.google.com/p/jsonpath/
+        and Perl version by Kate Rhodes at:
+                http://github.com/masukomi/jsonpath-perl/tree/master
+        
+        Python3 compatibily by Per J. Sandstrom
+        
+Platform: Any
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Text Processing :: Markup

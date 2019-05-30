@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: query-string
+Version: 1.0.2
+Summary: query_string(string) function - get url query string dict
+Home-page: https://github.com/looking-for-a-job/query_string.py
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: query,url
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

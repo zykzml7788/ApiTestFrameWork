@@ -1,0 +1,4 @@
+[console_scripts]
+qq = qqbot:QTerm
+qqbot = qqbot:RunBot
+

@@ -1,0 +1,7 @@
+setup.cfg
+query_string/__init__.py
+query_string.egg-info/PKG-INFO
+query_string.egg-info/SOURCES.txt
+query_string.egg-info/dependency_links.txt
+query_string.egg-info/requires.txt
+query_string.egg-info/top_level.txt

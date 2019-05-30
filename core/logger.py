@@ -1,47 +1,45 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-# @Time    : 2018/4/24 22:59
-# @Author  : uncleyong
-# @Blog    : http://www.cnblogs.com/UncleYong
-# @Gitee   : https://gitee.com/UncleYong
-# @QQ交流群 : 66719336
-
-import os
-import sys
-path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-# print(path)
-sys.path.insert(0, path)
+#!/user/bin/env python
+#coding=utf-8
+'''
+@project : bitest
+@author  : djcps
+#@file   : logger.py
+#@ide    : PyCharm
+#@time   : 2019-03-26 16:00:49
+'''
 import logging
 from logging import handlers
-from conf.settings import LOG_PATH
+import os
+
+#项目绝对路径
+curPath = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir))
 
 class Logger(object):
-    __instance = None
 
-    def __new__(cls, *args, **kwargs):
-        if not cls.__instance: 
-            cls.__instance = object.__new__(cls, *args) 
-        return cls.__instance 
+    level_relations = {
+        'debug':logging.DEBUG,
+        'info':logging.INFO,
+        'warning':logging.WARNING,
+        'error':logging.ERROR,
+        'crit':logging.CRITICAL
+    }#日志级别关系映射
 
-    def __init__(self):
-        self.formater = logging.Formatter(
-            '[%(asctime)s] [%(levelname)s] [%(pathname)s : %(funcName)s:%(lineno)d , %(message)s')
-        self.logger = logging.getLogger('log')
-        self.logger.setLevel(logging.DEBUG)
-        self.filelogger = handlers.RotatingFileHandler(LOG_PATH,
-                                                       maxBytes=5242880,
-                                                       backupCount=3
-                                                       )
-        self.console = logging.StreamHandler()
-        self.console.setLevel(logging.DEBUG)
-        self.filelogger.setFormatter(self.formater)
-        self.console.setFormatter(self.formater)
-        self.logger.addHandler(self.filelogger)
-        self.logger.addHandler(self.console)
-
-
-logger = Logger()
-
-if __name__ == '__main__':
-    logger.logger.debug('http://www.cnblogs.com/UncleYong/')
+    def __init__(self,filename="{}/logs/all.log".format(curPath),level='info',when='D',backCount=3,fmt='%(asctime)s - %(pathname)s[line:%(lineno)d] - %(levelname)s: %(message)s'):
+        self.logger = logging.getLogger(filename)
+        format_str = logging.Formatter(fmt)#设置日志格式
+        self.logger.setLevel(self.level_relations.get(level))#设置日志级别
+        sh = logging.StreamHandler()#往屏幕上输出
+        sh.setFormatter(format_str) #设置屏幕上显示的格式
+        th = handlers.TimedRotatingFileHandler(filename=filename,when=when,backupCount=backCount,encoding='utf-8')#往文件里写入#指定间隔时间自动生成文件的处理器
+        #实例化TimedRotatingFileHandler
+        #interval是时间间隔，backupCount是备份文件的个数，如果超过这个个数，就会自动删除，when是间隔的时间单位，单位有以下几种：
+        # S 秒
+        # M 分
+        # H 小时、
+        # D 天、
+        # W 每星期（interval==0时代表星期一）
+        # midnight 每天凌晨
+        th.setFormatter(format_str)#设置文件里写入的格式
+        self.logger.addHandler(sh) #把对象加到logger里
+        self.logger.addHandler(th)
 

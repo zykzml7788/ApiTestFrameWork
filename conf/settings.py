@@ -1,10 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @Time    : 2018/4/24 22:59
-# @Author  : uncleyong
-# @Blog    : http://www.cnblogs.com/UncleYong
-# @Gitee   : https://gitee.com/UncleYong
-# @QQ交流群 : 66719336
 
 import os
 
