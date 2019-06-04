@@ -78,8 +78,8 @@ class Test(unittest.TestCase):
 
     @data(*api_data)
     @unpack
-    def test_(self,description,url,method,headers,cookies,params,body,verify,saves):
-        logger.info("用例描述====>"+description)
+    def test_(self,descrption,url,method,headers,cookies,params,body,verify,saves):
+        logger.info("用例描述====>"+descrption)
         url = self.build_param(url)
         headers = self.build_param(headers)
         params = self.build_param(params)

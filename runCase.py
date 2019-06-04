@@ -15,4 +15,4 @@ if __name__ == '__main__':
     import pytest
     import time
     now = time.strftime("%Y-%m-%d_%H_%M_%S")
-    pytest.main(['-s','-q','./test_case/test_case.py','--html=report/{}_report.html'.format(now)])
+    pytest.main(['-s','./test_case/test_case.py','--html=report/{}_report.html'.format(now)])

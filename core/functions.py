@@ -69,4 +69,3 @@ def regex(target_str,pattern,index=0):
     results = re.findall(pattern,target_str)
     return results[index] if results != [] else results
 
-
