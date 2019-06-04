@@ -1,3 +1,4 @@
 [
-  "test_case/test_case.py::Test::test__1"
+  "test_case/test_case.py::Test::test__1",
+  "test_case/test_case.py::Test::test__2"
 ]

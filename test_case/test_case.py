@@ -18,6 +18,7 @@ from core.functions import *
 
 
 
+
 @ddt
 class Test(unittest.TestCase):
 
@@ -69,7 +70,7 @@ class Test(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         # 实例化测试基类，自带cookie保持
-        cls.request = TestBase()
+        cls.request = BaseTest()
 
 
     @classmethod
@@ -78,24 +79,24 @@ class Test(unittest.TestCase):
 
     @data(*api_data)
     @unpack
-    def test_(self,descrption,url,method,headers,cookies,params,body,verify,saves):
+    def test_(self,descrption,url,method,headers,cookies,params,body,file,verify,saves):
         logger.info("用例描述====>"+descrption)
         url = self.build_param(url)
         headers = self.build_param(headers)
         params = self.build_param(params)
         body = self.build_param(body)
         res = None
+        params = eval(params) if params else params
+        headers = eval(headers) if headers else headers
+        cookies = eval(cookies) if cookies else cookies
+        body = eval(body) if body else body
+        file = eval(file) if file else file
         if method.upper() == 'GET':
-            res = self.request.get_request(url=url,params=eval(self.params) if params else params,
-                                           headers=eval(headers) if headers else headers,
-                                           cookies=eval(cookies) if cookies else cookies)
-
+            res = self.request.get_request(url=url,params=params,headers=headers,cookies=cookies)
         elif method.upper() == 'POST':
-            res = self.request.post_request(url=url,headers=eval(headers) if headers else headers,
-                                            cookies=eval(cookies) if cookies else cookies,
-                                            params=eval(params) if params else params,
-                                            json=eval(body) if body else body)
-
+            res = self.request.post_request(url=url,headers=headers,cookies=cookies,params=params,json=body)
+        if method.upper() == 'UPLOAD':
+            res = self.request.upload_request(url=url,headers=headers,cookies=cookies,params=params,data=body,files=file)
         else:
             #待扩充，如PUT,DELETE方法
             pass
@@ -109,7 +110,13 @@ class Test(unittest.TestCase):
         if verify:
             # 遍历verify:
             for ver in verify.split(";"):
-                actual = jsonpath.jsonpath(res.json(), ver.split("=")[0])[0]
+                expr = ver.split("=")[0]
+                # 判断Jsonpath还是正则断言
+                if expr.startswith("$."):
+                    actual = jsonpath.jsonpath(res.json(), expr)[0]
+                else:
+                    actual = re.findall(expr,res.text)[0]
                 expect = ver.split("=")[1]
                 self.request.assertEquals(actual, expect)
+
 

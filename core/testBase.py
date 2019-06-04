@@ -8,12 +8,20 @@
 #@time   : 2019-05-05 10:23:02
 '''
 import requests
-from .logger import Logger
 from json import dumps
+from core.logger import Logger
+from requests.packages.urllib3.exceptions import InsecureRequestWarning
 
 logger = Logger().logger
 
-class TestBase(requests.Session):
+# 禁用安全请求警告
+
+
+
+requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
+
+
+class BaseTest(requests.Session):
 
     '''
         接口基类，供后续脚本使用
@@ -53,6 +61,23 @@ class TestBase(requests.Session):
             res = self.request('POST', url, headers=headers, params=params,data=data,
                                json=json,cookies=cookies,verify=False)
             self.api_log('POST', url, headers=headers, params=params,json=json, cookies=cookies,
+                         code=res.status_code, res_text=res.text,res_header=res.headers)
+            return res
+
+        except Exception as e:
+            logger.error("接口请求异常,原因：{}".format(e))
+            raise e
+
+    def upload_request(self,url,headers=None,data=None,files=None,json=None,params=None,cookies=None):
+        try:
+
+            filename = list(files.keys())[0]
+            filepath = list(files.values())[0]
+            with open(filepath,'rb') as file:
+                files["{}".format(filename)] = file
+                res = self.request('POST', url, headers=headers, params=params,data=data,
+                               files=files,json=json,cookies=cookies,verify=False)
+            self.api_log('POST', url, headers=headers, params=params,json=data,file=filepath, cookies=cookies,
                          code=res.status_code, res_text=res.text,res_header=res.headers)
             return res
 
@@ -102,12 +127,13 @@ class TestBase(requests.Session):
             raise AssertionError
 
 
-    def api_log(self,method,url,headers=None,params=None,json=None,cookies=None,code=None,res_text=None,res_header=None):
+    def api_log(self,method,url,headers=None,params=None,json=None,cookies=None,file=None,code=None,res_text=None,res_header=None):
         logger.info("请求方式====>{}".format(method))
         logger.info("请求地址====>{}".format(url))
         logger.info("请求头====>{}".format(dumps(headers,indent=4)))
         logger.info("请求参数====>{}".format(dumps(params,indent=4)))
         logger.info("请求体====>{}".format(dumps(json,indent=4)))
+        logger.info("上传附件为======>{}".format(file))
         logger.info("Cookies====>{}".format(dumps(cookies,indent=4)))
         logger.info("接口响应状态码====>{}".format(code))
         logger.info("接口响应头为====>{}".format(res_header))
