@@ -1,0 +1,381 @@
+2019-05-30 15:10:12,959 - C:\Users\djcps\Desktop\my_rf\test_case\test_case.py[line:69] - INFO: 用例描述====>系统登入
+2019-05-30 15:10:13,154 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:106] - INFO: 请求方式====>POST
+2019-05-30 15:10:13,154 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:107] - INFO: 请求地址====>http://v3.citymanage.haotest.com/sys/login
+2019-05-30 15:10:13,154 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:108] - INFO: 请求头====>{
+    "Content-Type": "application/json"
+}
+2019-05-30 15:10:13,154 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:109] - INFO: 请求参数====>""
+2019-05-30 15:10:13,155 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:110] - INFO: 请求体====>{
+    "userName": "18210034706",
+    "password": "123456"
+}
+2019-05-30 15:10:13,155 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:111] - INFO: Cookies====>""
+2019-05-30 15:10:13,155 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:112] - INFO: 接口响应状态码====>200
+2019-05-30 15:10:13,155 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:113] - INFO: 接口响应头为====>{'Access-Control-Allow-Origin': 'http://127.0.0.1:8080', 'Access-Control-Allow-Methods': '*', 'Access-Control-Max-Age': '1728000', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Headers': 'content-type, token', 'Set-Cookie': 'JSESSIONID=93CBAED04416F6DBF4C0AB2027AED8A5; Path=/; HttpOnly', 'Content-Type': 'application/json;charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Content-Encoding': 'gzip', 'Vary': 'Accept-Encoding', 'Date': 'Thu, 30 May 2019 07:10:09 GMT', 'Connection': 'close'}
+2019-05-30 15:10:13,155 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:114] - INFO: 接口响应体为====>{"code":200,"msg":"操作成功","object":{"userId":2,"token":"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxODIxMDAzNDcwNiIsInBhc3N3b3JkIjoiRTEwQURDMzk0OUJBNTlBQkJFNTZFMDU3RjIwRjg4M0UiLCJpZCI6MiwidXNlck5hbWUiOiIxODIxMDAzNDcwNiIsImV4cCI6MTU1OTI4NjYwOSwiaWF0IjoxNTU5MjAwMjA5LCJqdGkiOiJiNjY2NWQwMS1mOTlkLTRmMzEtOTcxOC1lNDIxOTNiMDk4NmMifQ.0BQU5xtZGVfQnabFs6KMDa_pxf5l9KscgvdSFcV4VOU"},"serverTime":"2019-05-30 15:10:09"}
+2019-05-30 15:10:13,156 - C:\Users\djcps\Desktop\my_rf\test_case\test_case.py[line:42] - INFO: 保存 token=>eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxODIxMDAzNDcwNiIsInBhc3N3b3JkIjoiRTEwQURDMzk0OUJBNTlBQkJFNTZFMDU3RjIwRjg4M0UiLCJpZCI6MiwidXNlck5hbWUiOiIxODIxMDAzNDcwNiIsImV4cCI6MTU1OTI4NjYwOSwiaWF0IjoxNTU5MjAwMjA5LCJqdGkiOiJiNjY2NWQwMS1mOTlkLTRmMzEtOTcxOC1lNDIxOTNiMDk4NmMifQ.0BQU5xtZGVfQnabFs6KMDa_pxf5l9KscgvdSFcV4VOU 到全局变量池
+2019-05-30 15:10:13,157 - C:\Users\djcps\Desktop\my_rf\test_case\test_case.py[line:42] - INFO: 保存 userId=>2 到全局变量池
+2019-05-30 15:10:13,157 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:72] - INFO: 断言成功,实际值：操作成功 等于 预期值：操作成功
+2019-05-30 15:10:13,172 - C:\Users\djcps\Desktop\my_rf\test_case\test_case.py[line:69] - INFO: 用例描述====>获取用户列表
+2019-05-30 15:10:13,268 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:106] - INFO: 请求方式====>POST
+2019-05-30 15:10:13,268 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:107] - INFO: 请求地址====>http://v3.citymanage.haotest.com/user/loadUserList
+2019-05-30 15:10:13,268 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:108] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxODIxMDAzNDcwNiIsInBhc3N3b3JkIjoiRTEwQURDMzk0OUJBNTlBQkJFNTZFMDU3RjIwRjg4M0UiLCJpZCI6MiwidXNlck5hbWUiOiIxODIxMDAzNDcwNiIsImV4cCI6MTU1OTI4NjYwOSwiaWF0IjoxNTU5MjAwMjA5LCJqdGkiOiJiNjY2NWQwMS1mOTlkLTRmMzEtOTcxOC1lNDIxOTNiMDk4NmMifQ.0BQU5xtZGVfQnabFs6KMDa_pxf5l9KscgvdSFcV4VOU"
+}
+2019-05-30 15:10:13,269 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:109] - INFO: 请求参数====>""
+2019-05-30 15:10:13,269 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:110] - INFO: 请求体====>{
+    "pageSize": "10",
+    "pageCurrent": "1",
+    "nickName": "",
+    "userName": ""
+}
+2019-05-30 15:10:13,269 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:111] - INFO: Cookies====>""
+2019-05-30 15:10:13,270 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:112] - INFO: 接口响应状态码====>200
+2019-05-30 15:10:13,270 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:113] - INFO: 接口响应头为====>{'Access-Control-Allow-Origin': 'http://127.0.0.1:8080', 'Access-Control-Allow-Methods': '*', 'Access-Control-Max-Age': '1728000', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Headers': 'content-type, token', 'Content-Type': 'application/json;charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Content-Encoding': 'gzip', 'Vary': 'Accept-Encoding', 'Date': 'Thu, 30 May 2019 07:10:09 GMT', 'Connection': 'close'}
+2019-05-30 15:10:13,270 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:114] - INFO: 接口响应体为====>{"code":200,"msg":"操作成功","object":{"list":[{"nickName":"47425589","enable":1,"id":95,"userName":"13547425589"},{"nickName":"mcmc","enable":1,"id":94,"userName":"15544664466"},{"nickName":"mcm","enable":1,"id":93,"userName":"15811112222"},{"nickName":"顺丰","enable":1,"id":92,"userName":"18521210022"},{"nickName":"斯蒂芬","enable":1,"id":91,"userName":"18952364225"},{"nickName":"dfsdf","enable":1,"id":90,"userName":"13521023640"},{"nickName":"2112","enable":0,"id":89,"userName":"18552436336"},{"nickName":"","enable":1,"id":88,"userName":"乘虚迭出"},{"nickName":"第三方","enable":1,"id":87,"userName":"是的发生的"},{"nickName":"","enable":1,"id":86,"userName":"第三程序程序"}],"totalRecords":87,"pageSize":10,"pageCurrent":1,"totalPages":9,"topPageNo":1,"nextPageNo":2,"bottomPageNo":9,"previousPageNo":1},"serverTime":"2019-05-30 15:10:09"}
+2019-05-30 15:10:13,270 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:72] - INFO: 断言成功,实际值：操作成功 等于 预期值：操作成功
+2019-05-30 15:10:13,272 - C:\Users\djcps\Desktop\my_rf\test_case\test_case.py[line:69] - INFO: 用例描述====>获取用户详情
+2019-05-30 15:10:13,378 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:106] - INFO: 请求方式====>POST
+2019-05-30 15:10:13,378 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:107] - INFO: 请求地址====>http://v3.citymanage.haotest.com/user/loadUserInfo
+2019-05-30 15:10:13,378 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:108] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxODIxMDAzNDcwNiIsInBhc3N3b3JkIjoiRTEwQURDMzk0OUJBNTlBQkJFNTZFMDU3RjIwRjg4M0UiLCJpZCI6MiwidXNlck5hbWUiOiIxODIxMDAzNDcwNiIsImV4cCI6MTU1OTI4NjYwOSwiaWF0IjoxNTU5MjAwMjA5LCJqdGkiOiJiNjY2NWQwMS1mOTlkLTRmMzEtOTcxOC1lNDIxOTNiMDk4NmMifQ.0BQU5xtZGVfQnabFs6KMDa_pxf5l9KscgvdSFcV4VOU"
+}
+2019-05-30 15:10:13,378 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:109] - INFO: 请求参数====>""
+2019-05-30 15:10:13,379 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:110] - INFO: 请求体====>{
+    "id": 2
+}
+2019-05-30 15:10:13,379 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:111] - INFO: Cookies====>""
+2019-05-30 15:10:13,379 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:112] - INFO: 接口响应状态码====>200
+2019-05-30 15:10:13,380 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:113] - INFO: 接口响应头为====>{'Access-Control-Allow-Origin': 'http://127.0.0.1:8080', 'Access-Control-Allow-Methods': '*', 'Access-Control-Max-Age': '1728000', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Headers': 'content-type, token', 'Content-Type': 'application/json;charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Content-Encoding': 'gzip', 'Vary': 'Accept-Encoding', 'Date': 'Thu, 30 May 2019 07:10:09 GMT', 'Connection': 'close'}
+2019-05-30 15:10:13,381 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:114] - INFO: 接口响应体为====>{"code":200,"msg":"操作成功","object":{"lastLoginTime":1559200209000,"address":"??","nickName":"??","enable":1,"rolesName":"总队管理员","rolesId":"1","id":2,"userName":"18210034706","telNo":"010-3466283","email":"luolibiao@haotest.com"},"serverTime":"2019-05-30 15:10:09"}
+2019-05-30 15:10:13,381 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:72] - INFO: 断言成功,实际值：操作成功 等于 预期值：操作成功
+2019-05-30 17:12:14,708 - C:\Users\djcps\Desktop\my_rf\test_case\test_case.py[line:75] - INFO: 用例描述====>系统登入
+2019-05-30 17:12:14,852 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:106] - INFO: 请求方式====>POST
+2019-05-30 17:12:14,853 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:107] - INFO: 请求地址====>http://v3.citymanage.haotest.com/sys/login
+2019-05-30 17:12:14,853 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:108] - INFO: 请求头====>{
+    "Content-Type": "application/json"
+}
+2019-05-30 17:12:14,853 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:109] - INFO: 请求参数====>""
+2019-05-30 17:12:14,855 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:110] - INFO: 请求体====>{
+    "userName": "18210034706",
+    "password": "123456"
+}
+2019-05-30 17:12:14,855 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:111] - INFO: Cookies====>""
+2019-05-30 17:12:14,855 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:112] - INFO: 接口响应状态码====>200
+2019-05-30 17:12:14,855 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:113] - INFO: 接口响应头为====>{'Access-Control-Allow-Origin': 'http://127.0.0.1:8080', 'Access-Control-Allow-Methods': '*', 'Access-Control-Max-Age': '1728000', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Headers': 'content-type, token', 'Set-Cookie': 'JSESSIONID=F375D7139CC7E7E20E0FB9F50C50174E; Path=/; HttpOnly', 'Content-Type': 'application/json;charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Content-Encoding': 'gzip', 'Vary': 'Accept-Encoding', 'Date': 'Thu, 30 May 2019 09:12:10 GMT', 'Connection': 'close'}
+2019-05-30 17:12:14,856 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:114] - INFO: 接口响应体为====>{"code":200,"msg":"操作成功","object":{"userId":2,"token":"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxODIxMDAzNDcwNiIsInBhc3N3b3JkIjoiRTEwQURDMzk0OUJBNTlBQkJFNTZFMDU3RjIwRjg4M0UiLCJpZCI6MiwidXNlck5hbWUiOiIxODIxMDAzNDcwNiIsImV4cCI6MTU1OTI5MzkzMCwiaWF0IjoxNTU5MjA3NTMwLCJqdGkiOiIyMTM5MjM1Yy03MGM0LTRiNjEtODk2Yi0xMGU1YWU5ZWI5ODYifQ.9PrsUr88BmBu__PnMw9flSIGy--7xTJURGj9NqHZKQg"},"serverTime":"2019-05-30 17:12:10"}
+2019-05-30 17:12:14,857 - C:\Users\djcps\Desktop\my_rf\test_case\test_case.py[line:43] - INFO: 保存 token=>eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxODIxMDAzNDcwNiIsInBhc3N3b3JkIjoiRTEwQURDMzk0OUJBNTlBQkJFNTZFMDU3RjIwRjg4M0UiLCJpZCI6MiwidXNlck5hbWUiOiIxODIxMDAzNDcwNiIsImV4cCI6MTU1OTI5MzkzMCwiaWF0IjoxNTU5MjA3NTMwLCJqdGkiOiIyMTM5MjM1Yy03MGM0LTRiNjEtODk2Yi0xMGU1YWU5ZWI5ODYifQ.9PrsUr88BmBu__PnMw9flSIGy--7xTJURGj9NqHZKQg 到全局变量池
+2019-05-30 17:12:14,857 - C:\Users\djcps\Desktop\my_rf\test_case\test_case.py[line:43] - INFO: 保存 userId=>2 到全局变量池
+2019-05-30 17:12:14,857 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:72] - INFO: 断言成功,实际值：操作成功 等于 预期值：操作成功
+2019-05-30 17:12:14,870 - C:\Users\djcps\Desktop\my_rf\test_case\test_case.py[line:75] - INFO: 用例描述====>获取用户列表
+2019-05-30 17:12:14,958 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:106] - INFO: 请求方式====>POST
+2019-05-30 17:12:14,958 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:107] - INFO: 请求地址====>http://v3.citymanage.haotest.com/user/loadUserList
+2019-05-30 17:12:14,958 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:108] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxODIxMDAzNDcwNiIsInBhc3N3b3JkIjoiRTEwQURDMzk0OUJBNTlBQkJFNTZFMDU3RjIwRjg4M0UiLCJpZCI6MiwidXNlck5hbWUiOiIxODIxMDAzNDcwNiIsImV4cCI6MTU1OTI5MzkzMCwiaWF0IjoxNTU5MjA3NTMwLCJqdGkiOiIyMTM5MjM1Yy03MGM0LTRiNjEtODk2Yi0xMGU1YWU5ZWI5ODYifQ.9PrsUr88BmBu__PnMw9flSIGy--7xTJURGj9NqHZKQg"
+}
+2019-05-30 17:12:14,959 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:109] - INFO: 请求参数====>""
+2019-05-30 17:12:14,960 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:110] - INFO: 请求体====>{
+    "pageSize": "10",
+    "pageCurrent": "1",
+    "nickName": "",
+    "userName": ""
+}
+2019-05-30 17:12:14,960 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:111] - INFO: Cookies====>""
+2019-05-30 17:12:14,960 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:112] - INFO: 接口响应状态码====>200
+2019-05-30 17:12:14,960 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:113] - INFO: 接口响应头为====>{'Access-Control-Allow-Origin': 'http://127.0.0.1:8080', 'Access-Control-Allow-Methods': '*', 'Access-Control-Max-Age': '1728000', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Headers': 'content-type, token', 'Content-Type': 'application/json;charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Content-Encoding': 'gzip', 'Vary': 'Accept-Encoding', 'Date': 'Thu, 30 May 2019 09:12:10 GMT', 'Connection': 'close'}
+2019-05-30 17:12:14,961 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:114] - INFO: 接口响应体为====>{"code":200,"msg":"操作成功","object":{"list":[{"nickName":"47425589","enable":1,"id":95,"userName":"13547425589"},{"nickName":"mcmc","enable":1,"id":94,"userName":"15544664466"},{"nickName":"mcm","enable":1,"id":93,"userName":"15811112222"},{"nickName":"顺丰","enable":1,"id":92,"userName":"18521210022"},{"nickName":"斯蒂芬","enable":1,"id":91,"userName":"18952364225"},{"nickName":"dfsdf","enable":1,"id":90,"userName":"13521023640"},{"nickName":"2112","enable":0,"id":89,"userName":"18552436336"},{"nickName":"","enable":1,"id":88,"userName":"乘虚迭出"},{"nickName":"第三方","enable":1,"id":87,"userName":"是的发生的"},{"nickName":"","enable":1,"id":86,"userName":"第三程序程序"}],"totalRecords":87,"pageSize":10,"pageCurrent":1,"totalPages":9,"topPageNo":1,"nextPageNo":2,"bottomPageNo":9,"previousPageNo":1},"serverTime":"2019-05-30 17:12:11"}
+2019-05-30 17:12:14,961 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:72] - INFO: 断言成功,实际值：操作成功 等于 预期值：操作成功
+2019-05-30 17:12:14,969 - C:\Users\djcps\Desktop\my_rf\test_case\test_case.py[line:75] - INFO: 用例描述====>获取用户详情
+2019-05-30 17:12:15,055 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:106] - INFO: 请求方式====>POST
+2019-05-30 17:12:15,056 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:107] - INFO: 请求地址====>http://v3.citymanage.haotest.com/user/loadUserInfo
+2019-05-30 17:12:15,056 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:108] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxODIxMDAzNDcwNiIsInBhc3N3b3JkIjoiRTEwQURDMzk0OUJBNTlBQkJFNTZFMDU3RjIwRjg4M0UiLCJpZCI6MiwidXNlck5hbWUiOiIxODIxMDAzNDcwNiIsImV4cCI6MTU1OTI5MzkzMCwiaWF0IjoxNTU5MjA3NTMwLCJqdGkiOiIyMTM5MjM1Yy03MGM0LTRiNjEtODk2Yi0xMGU1YWU5ZWI5ODYifQ.9PrsUr88BmBu__PnMw9flSIGy--7xTJURGj9NqHZKQg"
+}
+2019-05-30 17:12:15,056 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:109] - INFO: 请求参数====>""
+2019-05-30 17:12:15,056 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:110] - INFO: 请求体====>{
+    "id": 2
+}
+2019-05-30 17:12:15,057 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:111] - INFO: Cookies====>""
+2019-05-30 17:12:15,057 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:112] - INFO: 接口响应状态码====>200
+2019-05-30 17:12:15,057 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:113] - INFO: 接口响应头为====>{'Access-Control-Allow-Origin': 'http://127.0.0.1:8080', 'Access-Control-Allow-Methods': '*', 'Access-Control-Max-Age': '1728000', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Headers': 'content-type, token', 'Content-Type': 'application/json;charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Content-Encoding': 'gzip', 'Vary': 'Accept-Encoding', 'Date': 'Thu, 30 May 2019 09:12:10 GMT', 'Connection': 'close'}
+2019-05-30 17:12:15,057 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:114] - INFO: 接口响应体为====>{"code":200,"msg":"操作成功","object":{"lastLoginTime":1559207530000,"address":"??","nickName":"??","enable":1,"rolesName":"总队管理员","rolesId":"1","id":2,"userName":"18210034706","telNo":"010-3466283","email":"luolibiao@haotest.com"},"serverTime":"2019-05-30 17:12:11"}
+2019-05-30 17:12:15,179 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:72] - INFO: 断言成功,实际值：操作成功 等于 预期值：操作成功
+2019-05-30 17:13:00,040 - C:\Users\djcps\Desktop\my_rf\test_case\test_case.py[line:75] - INFO: 用例描述====>系统登入
+2019-05-30 17:13:00,382 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:106] - INFO: 请求方式====>POST
+2019-05-30 17:13:00,382 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:107] - INFO: 请求地址====>http://v3.citymanage.haotest.com/sys/login
+2019-05-30 17:13:00,383 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:108] - INFO: 请求头====>{
+    "Content-Type": "application/json"
+}
+2019-05-30 17:13:00,383 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:109] - INFO: 请求参数====>""
+2019-05-30 17:13:00,401 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:110] - INFO: 请求体====>{
+    "userName": "18210034706",
+    "password": "123456"
+}
+2019-05-30 17:13:00,401 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:111] - INFO: Cookies====>""
+2019-05-30 17:13:00,401 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:112] - INFO: 接口响应状态码====>200
+2019-05-30 17:13:00,402 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:113] - INFO: 接口响应头为====>{'Access-Control-Allow-Origin': 'http://127.0.0.1:8080', 'Access-Control-Allow-Methods': '*', 'Access-Control-Max-Age': '1728000', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Headers': 'content-type, token', 'Set-Cookie': 'JSESSIONID=7BA84B1237258007A2ABBFADC9E911AD; Path=/; HttpOnly', 'Content-Type': 'application/json;charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Content-Encoding': 'gzip', 'Vary': 'Accept-Encoding', 'Date': 'Thu, 30 May 2019 09:12:56 GMT', 'Connection': 'close'}
+2019-05-30 17:13:00,402 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:114] - INFO: 接口响应体为====>{"code":200,"msg":"操作成功","object":{"userId":2,"token":"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxODIxMDAzNDcwNiIsInBhc3N3b3JkIjoiRTEwQURDMzk0OUJBNTlBQkJFNTZFMDU3RjIwRjg4M0UiLCJpZCI6MiwidXNlck5hbWUiOiIxODIxMDAzNDcwNiIsImV4cCI6MTU1OTI5Mzk3NiwiaWF0IjoxNTU5MjA3NTc2LCJqdGkiOiJmMWUwN2Q1YS1iZTBhLTQzM2MtOWE1NC0zNjFhMWIyNDE2MWMifQ.S97y330f54lszNIfKlmVX65c0T5_OMAkV6niQ5Vcnzw"},"serverTime":"2019-05-30 17:12:56"}
+2019-05-30 17:13:00,403 - C:\Users\djcps\Desktop\my_rf\test_case\test_case.py[line:43] - INFO: 保存 token=>eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxODIxMDAzNDcwNiIsInBhc3N3b3JkIjoiRTEwQURDMzk0OUJBNTlBQkJFNTZFMDU3RjIwRjg4M0UiLCJpZCI6MiwidXNlck5hbWUiOiIxODIxMDAzNDcwNiIsImV4cCI6MTU1OTI5Mzk3NiwiaWF0IjoxNTU5MjA3NTc2LCJqdGkiOiJmMWUwN2Q1YS1iZTBhLTQzM2MtOWE1NC0zNjFhMWIyNDE2MWMifQ.S97y330f54lszNIfKlmVX65c0T5_OMAkV6niQ5Vcnzw 到全局变量池
+2019-05-30 17:13:00,403 - C:\Users\djcps\Desktop\my_rf\test_case\test_case.py[line:43] - INFO: 保存 userId=>2 到全局变量池
+2019-05-30 17:13:00,404 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:72] - INFO: 断言成功,实际值：操作成功 等于 预期值：操作成功
+2019-05-30 17:13:00,412 - C:\Users\djcps\Desktop\my_rf\test_case\test_case.py[line:75] - INFO: 用例描述====>获取用户列表
+2019-05-30 17:13:00,508 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:106] - INFO: 请求方式====>POST
+2019-05-30 17:13:00,508 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:107] - INFO: 请求地址====>http://v3.citymanage.haotest.com/user/loadUserList
+2019-05-30 17:13:00,508 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:108] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxODIxMDAzNDcwNiIsInBhc3N3b3JkIjoiRTEwQURDMzk0OUJBNTlBQkJFNTZFMDU3RjIwRjg4M0UiLCJpZCI6MiwidXNlck5hbWUiOiIxODIxMDAzNDcwNiIsImV4cCI6MTU1OTI5Mzk3NiwiaWF0IjoxNTU5MjA3NTc2LCJqdGkiOiJmMWUwN2Q1YS1iZTBhLTQzM2MtOWE1NC0zNjFhMWIyNDE2MWMifQ.S97y330f54lszNIfKlmVX65c0T5_OMAkV6niQ5Vcnzw"
+}
+2019-05-30 17:13:00,508 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:109] - INFO: 请求参数====>""
+2019-05-30 17:13:00,509 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:110] - INFO: 请求体====>{
+    "pageSize": "10",
+    "pageCurrent": "1",
+    "nickName": "",
+    "userName": ""
+}
+2019-05-30 17:13:00,509 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:111] - INFO: Cookies====>""
+2019-05-30 17:13:00,509 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:112] - INFO: 接口响应状态码====>200
+2019-05-30 17:13:00,509 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:113] - INFO: 接口响应头为====>{'Access-Control-Allow-Origin': 'http://127.0.0.1:8080', 'Access-Control-Allow-Methods': '*', 'Access-Control-Max-Age': '1728000', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Headers': 'content-type, token', 'Content-Type': 'application/json;charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Content-Encoding': 'gzip', 'Vary': 'Accept-Encoding', 'Date': 'Thu, 30 May 2019 09:12:56 GMT', 'Connection': 'close'}
+2019-05-30 17:13:00,509 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:114] - INFO: 接口响应体为====>{"code":200,"msg":"操作成功","object":{"list":[{"nickName":"47425589","enable":1,"id":95,"userName":"13547425589"},{"nickName":"mcmc","enable":1,"id":94,"userName":"15544664466"},{"nickName":"mcm","enable":1,"id":93,"userName":"15811112222"},{"nickName":"顺丰","enable":1,"id":92,"userName":"18521210022"},{"nickName":"斯蒂芬","enable":1,"id":91,"userName":"18952364225"},{"nickName":"dfsdf","enable":1,"id":90,"userName":"13521023640"},{"nickName":"2112","enable":0,"id":89,"userName":"18552436336"},{"nickName":"","enable":1,"id":88,"userName":"乘虚迭出"},{"nickName":"第三方","enable":1,"id":87,"userName":"是的发生的"},{"nickName":"","enable":1,"id":86,"userName":"第三程序程序"}],"totalRecords":87,"pageSize":10,"pageCurrent":1,"totalPages":9,"topPageNo":1,"nextPageNo":2,"bottomPageNo":9,"previousPageNo":1},"serverTime":"2019-05-30 17:12:56"}
+2019-05-30 17:13:00,510 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:72] - INFO: 断言成功,实际值：操作成功 等于 预期值：操作成功
+2019-05-30 17:13:00,521 - C:\Users\djcps\Desktop\my_rf\test_case\test_case.py[line:75] - INFO: 用例描述====>获取用户详情
+2019-05-30 17:13:00,637 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:106] - INFO: 请求方式====>POST
+2019-05-30 17:13:00,637 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:107] - INFO: 请求地址====>http://v3.citymanage.haotest.com/user/loadUserInfo
+2019-05-30 17:13:00,637 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:108] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxODIxMDAzNDcwNiIsInBhc3N3b3JkIjoiRTEwQURDMzk0OUJBNTlBQkJFNTZFMDU3RjIwRjg4M0UiLCJpZCI6MiwidXNlck5hbWUiOiIxODIxMDAzNDcwNiIsImV4cCI6MTU1OTI5Mzk3NiwiaWF0IjoxNTU5MjA3NTc2LCJqdGkiOiJmMWUwN2Q1YS1iZTBhLTQzM2MtOWE1NC0zNjFhMWIyNDE2MWMifQ.S97y330f54lszNIfKlmVX65c0T5_OMAkV6niQ5Vcnzw"
+}
+2019-05-30 17:13:00,637 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:109] - INFO: 请求参数====>""
+2019-05-30 17:13:00,638 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:110] - INFO: 请求体====>{
+    "id": 2
+}
+2019-05-30 17:13:00,638 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:111] - INFO: Cookies====>""
+2019-05-30 17:13:00,638 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:112] - INFO: 接口响应状态码====>200
+2019-05-30 17:13:00,638 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:113] - INFO: 接口响应头为====>{'Access-Control-Allow-Origin': 'http://127.0.0.1:8080', 'Access-Control-Allow-Methods': '*', 'Access-Control-Max-Age': '1728000', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Headers': 'content-type, token', 'Content-Type': 'application/json;charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Content-Encoding': 'gzip', 'Vary': 'Accept-Encoding', 'Date': 'Thu, 30 May 2019 09:12:56 GMT', 'Connection': 'close'}
+2019-05-30 17:13:00,639 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:114] - INFO: 接口响应体为====>{"code":200,"msg":"操作成功","object":{"lastLoginTime":1559207576000,"address":"??","nickName":"??","enable":1,"rolesName":"总队管理员","rolesId":"1","id":2,"userName":"18210034706","telNo":"010-3466283","email":"luolibiao@haotest.com"},"serverTime":"2019-05-30 17:12:56"}
+2019-05-30 17:13:00,639 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:72] - INFO: 断言成功,实际值：操作成功 等于 预期值：操作成功
+2019-05-30 17:13:18,934 - C:\Users\djcps\Desktop\my_rf\test_case\test_case.py[line:75] - INFO: 用例描述====>系统登入
+2019-05-30 17:13:19,051 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:106] - INFO: 请求方式====>POST
+2019-05-30 17:13:19,052 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:107] - INFO: 请求地址====>http://v3.citymanage.haotest.com/sys/login
+2019-05-30 17:13:19,052 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:108] - INFO: 请求头====>{
+    "Content-Type": "application/json"
+}
+2019-05-30 17:13:19,052 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:109] - INFO: 请求参数====>""
+2019-05-30 17:13:19,056 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:110] - INFO: 请求体====>{
+    "userName": "18210034706",
+    "password": "123456"
+}
+2019-05-30 17:13:19,057 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:111] - INFO: Cookies====>""
+2019-05-30 17:13:19,057 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:112] - INFO: 接口响应状态码====>200
+2019-05-30 17:13:19,057 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:113] - INFO: 接口响应头为====>{'Access-Control-Allow-Origin': 'http://127.0.0.1:8080', 'Access-Control-Allow-Methods': '*', 'Access-Control-Max-Age': '1728000', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Headers': 'content-type, token', 'Set-Cookie': 'JSESSIONID=FD4C56B002214A13B041C993541D57A8; Path=/; HttpOnly', 'Content-Type': 'application/json;charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Content-Encoding': 'gzip', 'Vary': 'Accept-Encoding', 'Date': 'Thu, 30 May 2019 09:13:15 GMT', 'Connection': 'close'}
+2019-05-30 17:13:19,058 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:114] - INFO: 接口响应体为====>{"code":200,"msg":"操作成功","object":{"userId":2,"token":"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxODIxMDAzNDcwNiIsInBhc3N3b3JkIjoiRTEwQURDMzk0OUJBNTlBQkJFNTZFMDU3RjIwRjg4M0UiLCJpZCI6MiwidXNlck5hbWUiOiIxODIxMDAzNDcwNiIsImV4cCI6MTU1OTI5Mzk5NSwiaWF0IjoxNTU5MjA3NTk1LCJqdGkiOiJlZTAwNDFiZi0wMWU1LTRjZWQtODZiMC0xMGU2ZDBkZDdiYTYifQ.CGnH4K2EIurGUTjBR5RjURRrXLj5d_VePVi-fPoktgs"},"serverTime":"2019-05-30 17:13:15"}
+2019-05-30 17:13:19,059 - C:\Users\djcps\Desktop\my_rf\test_case\test_case.py[line:43] - INFO: 保存 token=>eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxODIxMDAzNDcwNiIsInBhc3N3b3JkIjoiRTEwQURDMzk0OUJBNTlBQkJFNTZFMDU3RjIwRjg4M0UiLCJpZCI6MiwidXNlck5hbWUiOiIxODIxMDAzNDcwNiIsImV4cCI6MTU1OTI5Mzk5NSwiaWF0IjoxNTU5MjA3NTk1LCJqdGkiOiJlZTAwNDFiZi0wMWU1LTRjZWQtODZiMC0xMGU2ZDBkZDdiYTYifQ.CGnH4K2EIurGUTjBR5RjURRrXLj5d_VePVi-fPoktgs 到全局变量池
+2019-05-30 17:13:19,059 - C:\Users\djcps\Desktop\my_rf\test_case\test_case.py[line:43] - INFO: 保存 userId=>2 到全局变量池
+2019-05-30 17:13:19,059 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:72] - INFO: 断言成功,实际值：操作成功 等于 预期值：操作成功
+2019-05-30 17:13:19,067 - C:\Users\djcps\Desktop\my_rf\test_case\test_case.py[line:75] - INFO: 用例描述====>获取用户列表
+2019-05-30 17:13:19,164 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:106] - INFO: 请求方式====>POST
+2019-05-30 17:13:19,164 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:107] - INFO: 请求地址====>http://v3.citymanage.haotest.com/user/loadUserList
+2019-05-30 17:13:19,164 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:108] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxODIxMDAzNDcwNiIsInBhc3N3b3JkIjoiRTEwQURDMzk0OUJBNTlBQkJFNTZFMDU3RjIwRjg4M0UiLCJpZCI6MiwidXNlck5hbWUiOiIxODIxMDAzNDcwNiIsImV4cCI6MTU1OTI5Mzk5NSwiaWF0IjoxNTU5MjA3NTk1LCJqdGkiOiJlZTAwNDFiZi0wMWU1LTRjZWQtODZiMC0xMGU2ZDBkZDdiYTYifQ.CGnH4K2EIurGUTjBR5RjURRrXLj5d_VePVi-fPoktgs"
+}
+2019-05-30 17:13:19,165 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:109] - INFO: 请求参数====>""
+2019-05-30 17:13:19,165 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:110] - INFO: 请求体====>{
+    "pageSize": "10",
+    "pageCurrent": "1",
+    "nickName": "",
+    "userName": ""
+}
+2019-05-30 17:13:19,165 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:111] - INFO: Cookies====>""
+2019-05-30 17:13:19,165 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:112] - INFO: 接口响应状态码====>200
+2019-05-30 17:13:19,166 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:113] - INFO: 接口响应头为====>{'Access-Control-Allow-Origin': 'http://127.0.0.1:8080', 'Access-Control-Allow-Methods': '*', 'Access-Control-Max-Age': '1728000', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Headers': 'content-type, token', 'Content-Type': 'application/json;charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Content-Encoding': 'gzip', 'Vary': 'Accept-Encoding', 'Date': 'Thu, 30 May 2019 09:13:15 GMT', 'Connection': 'close'}
+2019-05-30 17:13:19,166 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:114] - INFO: 接口响应体为====>{"code":200,"msg":"操作成功","object":{"list":[{"nickName":"47425589","enable":1,"id":95,"userName":"13547425589"},{"nickName":"mcmc","enable":1,"id":94,"userName":"15544664466"},{"nickName":"mcm","enable":1,"id":93,"userName":"15811112222"},{"nickName":"顺丰","enable":1,"id":92,"userName":"18521210022"},{"nickName":"斯蒂芬","enable":1,"id":91,"userName":"18952364225"},{"nickName":"dfsdf","enable":1,"id":90,"userName":"13521023640"},{"nickName":"2112","enable":0,"id":89,"userName":"18552436336"},{"nickName":"","enable":1,"id":88,"userName":"乘虚迭出"},{"nickName":"第三方","enable":1,"id":87,"userName":"是的发生的"},{"nickName":"","enable":1,"id":86,"userName":"第三程序程序"}],"totalRecords":87,"pageSize":10,"pageCurrent":1,"totalPages":9,"topPageNo":1,"nextPageNo":2,"bottomPageNo":9,"previousPageNo":1},"serverTime":"2019-05-30 17:13:15"}
+2019-05-30 17:13:19,166 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:72] - INFO: 断言成功,实际值：操作成功 等于 预期值：操作成功
+2019-05-30 17:13:19,177 - C:\Users\djcps\Desktop\my_rf\test_case\test_case.py[line:75] - INFO: 用例描述====>获取用户详情
+2019-05-30 17:13:19,270 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:106] - INFO: 请求方式====>POST
+2019-05-30 17:13:19,270 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:107] - INFO: 请求地址====>http://v3.citymanage.haotest.com/user/loadUserInfo
+2019-05-30 17:13:19,271 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:108] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxODIxMDAzNDcwNiIsInBhc3N3b3JkIjoiRTEwQURDMzk0OUJBNTlBQkJFNTZFMDU3RjIwRjg4M0UiLCJpZCI6MiwidXNlck5hbWUiOiIxODIxMDAzNDcwNiIsImV4cCI6MTU1OTI5Mzk5NSwiaWF0IjoxNTU5MjA3NTk1LCJqdGkiOiJlZTAwNDFiZi0wMWU1LTRjZWQtODZiMC0xMGU2ZDBkZDdiYTYifQ.CGnH4K2EIurGUTjBR5RjURRrXLj5d_VePVi-fPoktgs"
+}
+2019-05-30 17:13:19,271 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:109] - INFO: 请求参数====>""
+2019-05-30 17:13:19,271 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:110] - INFO: 请求体====>{
+    "id": 2
+}
+2019-05-30 17:13:19,272 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:111] - INFO: Cookies====>""
+2019-05-30 17:13:19,272 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:112] - INFO: 接口响应状态码====>200
+2019-05-30 17:13:19,272 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:113] - INFO: 接口响应头为====>{'Access-Control-Allow-Origin': 'http://127.0.0.1:8080', 'Access-Control-Allow-Methods': '*', 'Access-Control-Max-Age': '1728000', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Headers': 'content-type, token', 'Content-Type': 'application/json;charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Content-Encoding': 'gzip', 'Vary': 'Accept-Encoding', 'Date': 'Thu, 30 May 2019 09:13:15 GMT', 'Connection': 'close'}
+2019-05-30 17:13:19,272 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:114] - INFO: 接口响应体为====>{"code":200,"msg":"操作成功","object":{"lastLoginTime":1559207595000,"address":"??","nickName":"??","enable":1,"rolesName":"总队管理员","rolesId":"1","id":2,"userName":"18210034706","telNo":"010-3466283","email":"luolibiao@haotest.com"},"serverTime":"2019-05-30 17:13:15"}
+2019-05-30 17:13:19,272 - C:\Users\djcps\Desktop\my_rf\core\testBase.py[line:72] - INFO: 断言成功,实际值：操作成功 等于 预期值：操作成功
+2019-05-30 17:15:21,547 - C:\Users\djcps\Desktop\my_rf\test_case\test_case.py[line:75] - INFO: 用例描述====>
+2019-05-30 17:15:32,969 - C:\Users\djcps\Desktop\my_rf\test_case\test_case.py[line:75] - INFO: 用例描述====>
+2019-05-30 17:15:59,637 - C:\Users\djcps\Desktop\my_rf\test_case\test_case.py[line:75] - INFO: 用例描述====>
+2019-05-30 17:16:07,836 - C:\Users\djcps\Desktop\my_rf\test_case\test_case.py[line:75] - INFO: 用例描述====>asdas
+2019-05-30 17:16:59,394 - C:\Users\djcps\Desktop\my_rf\test_case\test_case.py[line:75] - INFO: 用例描述====>asdas
+2019-05-30 17:18:22,228 - C:\Users\djcps\Desktop\my_rf\test_case\test_case.py[line:77] - INFO: 用例描述====>asdas
+2019-05-30 17:19:13,545 - C:\Users\djcps\Desktop\my_rf\test_case\test_case.py[line:77] - INFO: 用例描述====>asdas
+2019-05-30 17:19:28,418 - C:\Users\djcps\Desktop\my_rf\test_case\test_case.py[line:77] - INFO: 用例描述====>asdas
+2019-05-30 17:21:00,293 - C:\Users\djcps\Desktop\my_rf\test_case\test_case.py[line:77] - INFO: 用例描述====>asdas
+2019-05-30 17:23:48,214 - C:\Users\djcps\Desktop\my_rf\test_case\test_case.py[line:77] - INFO: 用例描述====>asdas
+2019-05-30 17:24:46,724 - C:\Users\djcps\Desktop\my_rf\test_case\test_case.py[line:77] - INFO: 用例描述====>asdas
+2019-05-30 17:25:57,388 - C:\Users\djcps\Desktop\my_rf\test_case\test_case.py[line:80] - INFO: 用例描述====>asdas
+2019-05-30 17:26:46,061 - C:\Users\djcps\Desktop\my_rf\test_case\test_case.py[line:80] - INFO: 用例描述====>asdas
+2019-05-30 17:27:27,076 - C:\Users\djcps\Desktop\my_rf\test_case\test_case.py[line:80] - INFO: 用例描述====>asdas
+2019-05-30 17:41:03,100 - C:\Users\djcps\Desktop\ApiTestFrameWork\test_case\test_case.py[line:80] - INFO: 用例描述====>asdas
+2019-05-30 17:52:06,392 - C:\Users\djcps\Desktop\ApiTestFrameWork\test_case\test_case.py[line:80] - INFO: 用例描述====>asdas
+2019-05-30 17:52:56,315 - C:\Users\djcps\Desktop\ApiTestFrameWork\test_case\test_case.py[line:80] - INFO: 用例描述====>asdas
+2019-05-30 17:54:25,283 - C:\Users\djcps\Desktop\ApiTestFrameWork\test_case\test_case.py[line:80] - INFO: 用例描述====>asdas
+2019-05-30 18:26:52,336 - C:\Users\djcps\Desktop\ApiTestFrameWork\test_case\test_case.py[line:80] - INFO: 用例描述====>系统登入
+2019-05-30 18:26:52,442 - C:\Users\djcps\Desktop\ApiTestFrameWork\core\testBase.py[line:106] - INFO: 请求方式====>POST
+2019-05-30 18:26:52,443 - C:\Users\djcps\Desktop\ApiTestFrameWork\core\testBase.py[line:107] - INFO: 请求地址====>http://v3.citymanage.haotest.com/sys/login
+2019-05-30 18:26:52,443 - C:\Users\djcps\Desktop\ApiTestFrameWork\core\testBase.py[line:108] - INFO: 请求头====>{
+    "Content-Type": "application/json"
+}
+2019-05-30 18:26:52,443 - C:\Users\djcps\Desktop\ApiTestFrameWork\core\testBase.py[line:109] - INFO: 请求参数====>""
+2019-05-30 18:26:52,443 - C:\Users\djcps\Desktop\ApiTestFrameWork\core\testBase.py[line:110] - INFO: 请求体====>{
+    "userName": "18210034706",
+    "password": "123456"
+}
+2019-05-30 18:26:52,444 - C:\Users\djcps\Desktop\ApiTestFrameWork\core\testBase.py[line:111] - INFO: Cookies====>""
+2019-05-30 18:26:52,444 - C:\Users\djcps\Desktop\ApiTestFrameWork\core\testBase.py[line:112] - INFO: 接口响应状态码====>200
+2019-05-30 18:26:52,444 - C:\Users\djcps\Desktop\ApiTestFrameWork\core\testBase.py[line:113] - INFO: 接口响应头为====>{'Access-Control-Allow-Origin': 'http://127.0.0.1:8080', 'Access-Control-Allow-Methods': '*', 'Access-Control-Max-Age': '1728000', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Headers': 'content-type, token', 'Set-Cookie': 'JSESSIONID=074ACCA483BFEEB77720618568A6E20C; Path=/; HttpOnly', 'Content-Type': 'application/json;charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Content-Encoding': 'gzip', 'Vary': 'Accept-Encoding', 'Date': 'Thu, 30 May 2019 10:26:48 GMT', 'Connection': 'close'}
+2019-05-30 18:26:52,444 - C:\Users\djcps\Desktop\ApiTestFrameWork\core\testBase.py[line:114] - INFO: 接口响应体为====>{"code":200,"msg":"操作成功","object":{"userId":2,"token":"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxODIxMDAzNDcwNiIsInBhc3N3b3JkIjoiRTEwQURDMzk0OUJBNTlBQkJFNTZFMDU3RjIwRjg4M0UiLCJpZCI6MiwidXNlck5hbWUiOiIxODIxMDAzNDcwNiIsImV4cCI6MTU1OTI5ODQwOCwiaWF0IjoxNTU5MjEyMDA4LCJqdGkiOiI3Y2IxYTcyOS00ZTA3LTQxODYtOTUwNS03Nzk3NzRmNzdmZmMifQ.berVZjYVqJTpTqZLeiw5O0DtI209dp70JJk7D5h-qbs"},"serverTime":"2019-05-30 18:26:48"}
+2019-05-30 18:26:52,445 - C:\Users\djcps\Desktop\ApiTestFrameWork\test_case\test_case.py[line:43] - INFO: 保存 token=>eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxODIxMDAzNDcwNiIsInBhc3N3b3JkIjoiRTEwQURDMzk0OUJBNTlBQkJFNTZFMDU3RjIwRjg4M0UiLCJpZCI6MiwidXNlck5hbWUiOiIxODIxMDAzNDcwNiIsImV4cCI6MTU1OTI5ODQwOCwiaWF0IjoxNTU5MjEyMDA4LCJqdGkiOiI3Y2IxYTcyOS00ZTA3LTQxODYtOTUwNS03Nzk3NzRmNzdmZmMifQ.berVZjYVqJTpTqZLeiw5O0DtI209dp70JJk7D5h-qbs 到全局变量池
+2019-05-30 18:26:52,446 - C:\Users\djcps\Desktop\ApiTestFrameWork\test_case\test_case.py[line:43] - INFO: 保存 userId=>2 到全局变量池
+2019-05-30 18:26:52,446 - C:\Users\djcps\Desktop\ApiTestFrameWork\core\testBase.py[line:72] - INFO: 断言成功,实际值：操作成功 等于 预期值：操作成功
+2019-05-30 18:26:52,449 - C:\Users\djcps\Desktop\ApiTestFrameWork\test_case\test_case.py[line:80] - INFO: 用例描述====>获取用户列表
+2019-05-30 18:26:52,549 - C:\Users\djcps\Desktop\ApiTestFrameWork\core\testBase.py[line:106] - INFO: 请求方式====>POST
+2019-05-30 18:26:52,550 - C:\Users\djcps\Desktop\ApiTestFrameWork\core\testBase.py[line:107] - INFO: 请求地址====>http://v3.citymanage.haotest.com/user/loadUserList
+2019-05-30 18:26:52,550 - C:\Users\djcps\Desktop\ApiTestFrameWork\core\testBase.py[line:108] - INFO: 请求头====>{
+    "Content-Type": "application/json",
+    "token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxODIxMDAzNDcwNiIsInBhc3N3b3JkIjoiRTEwQURDMzk0OUJBNTlBQkJFNTZFMDU3RjIwRjg4M0UiLCJpZCI6MiwidXNlck5hbWUiOiIxODIxMDAzNDcwNiIsImV4cCI6MTU1OTI5ODQwOCwiaWF0IjoxNTU5MjEyMDA4LCJqdGkiOiI3Y2IxYTcyOS00ZTA3LTQxODYtOTUwNS03Nzk3NzRmNzdmZmMifQ.berVZjYVqJTpTqZLeiw5O0DtI209dp70JJk7D5h-qbs"
+}
+2019-05-30 18:26:52,551 - C:\Users\djcps\Desktop\ApiTestFrameWork\core\testBase.py[line:109] - INFO: 请求参数====>""
+2019-05-30 18:26:52,551 - C:\Users\djcps\Desktop\ApiTestFrameWork\core\testBase.py[line:110] - INFO: 请求体====>{
+    "pageSize": "10",
+    "pageCurrent": "1",
+    "nickName": "",
+    "userName": ""
+}
+2019-05-30 18:26:52,551 - C:\Users\djcps\Desktop\ApiTestFrameWork\core\testBase.py[line:111] - INFO: Cookies====>""
+2019-05-30 18:26:52,551 - C:\Users\djcps\Desktop\ApiTestFrameWork\core\testBase.py[line:112] - INFO: 接口响应状态码====>200
+2019-05-30 18:26:52,552 - C:\Users\djcps\Desktop\ApiTestFrameWork\core\testBase.py[line:113] - INFO: 接口响应头为====>{'Access-Control-Allow-Origin': 'http://127.0.0.1:8080', 'Access-Control-Allow-Methods': '*', 'Access-Control-Max-Age': '1728000', 'Access-Control-Allow-Credentials': 'true', 'Access-Control-Allow-Headers': 'content-type, token', 'Content-Type': 'application/json;charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Content-Encoding': 'gzip', 'Vary': 'Accept-Encoding', 'Date': 'Thu, 30 May 2019 10:26:48 GMT', 'Connection': 'close'}
+2019-05-30 18:26:52,552 - C:\Users\djcps\Desktop\ApiTestFrameWork\core\testBase.py[line:114] - INFO: 接口响应体为====>{"code":200,"msg":"操作成功","object":{"list":[{"nickName":"47425589","enable":1,"id":95,"userName":"13547425589"},{"nickName":"mcmc","enable":1,"id":94,"userName":"15544664466"},{"nickName":"mcm","enable":1,"id":93,"userName":"15811112222"},{"nickName":"顺丰","enable":1,"id":92,"userName":"18521210022"},{"nickName":"斯蒂芬","enable":1,"id":91,"userName":"18952364225"},{"nickName":"dfsdf","enable":1,"id":90,"userName":"13521023640"},{"nickName":"2112","enable":0,"id":89,"userName":"18552436336"},{"nickName":"","enable":1,"id":88,"userName":"乘虚迭出"},{"nickName":"第三方","enable":1,"id":87,"userName":"是的发生的"},{"nickName":"","enable":1,"id":86,"userName":"第三程序程序"}],"totalRecords":87,"pageSize":10,"pageCurrent":1,"totalPages":9,"topPageNo":1,"nextPageNo":2,"bottomPageNo":9,"previousPageNo":1},"serverTime":"2019-05-30 18:26:48"}
+2019-05-30 18:26:52,553 - C:\Users\djcps\Desktop\ApiTestFrameWork\core\testBase.py[line:72] - INFO: 断言成功,实际值：操作成功 等于 预期值：操作成功
+2019-05-30 18:26:52,556 - C:\Users\djcps\Desktop\ApiTestFrameWork\test_case\test_case.py[line:80] - INFO: 用例描述====>获取用户详情
+2019-05-30 18:26:52,642 - C:\Users\djcps\Desktop\ApiTestFrameWork\test_case\test_case.py[line:80] - INFO: 用例描述====>添加用户信息
+2019-05-30 18:26:52,659 - C:\Users\djcps\Desktop\ApiTestFrameWork\test_case\test_case.py[line:80] - INFO: 用例描述====>用户不存在
+时，添加用户
+2019-05-30 18:26:52,670 - C:\Users\djcps\Desktop\ApiTestFrameWork\test_case\test_case.py[line:80] - INFO: 用例描述====>重置密码
+2019-05-30 18:26:52,682 - C:\Users\djcps\Desktop\ApiTestFrameWork\test_case\test_case.py[line:80] - INFO: 用例描述====>场所信息归属
+地初始化数据
+2019-05-30 18:26:52,694 - C:\Users\djcps\Desktop\ApiTestFrameWork\test_case\test_case.py[line:80] - INFO: 用例描述====>查询当前节点
+下的子节点
+2019-05-30 18:26:52,704 - C:\Users\djcps\Desktop\ApiTestFrameWork\test_case\test_case.py[line:80] - INFO: 用例描述====>获取所有场所
+类别列表
+2019-05-30 18:26:52,715 - C:\Users\djcps\Desktop\ApiTestFrameWork\test_case\test_case.py[line:80] - INFO: 用例描述====>加载场所类别
+信息
+2019-05-30 18:26:52,729 - C:\Users\djcps\Desktop\ApiTestFrameWork\test_case\test_case.py[line:80] - INFO: 用例描述====>添加/修改场所
+类型
+2019-05-30 18:26:52,740 - C:\Users\djcps\Desktop\ApiTestFrameWork\test_case\test_case.py[line:80] - INFO: 用例描述====>加载场所类型
+相关违法行为
+列表
+2019-05-30 18:26:52,750 - C:\Users\djcps\Desktop\ApiTestFrameWork\test_case\test_case.py[line:80] - INFO: 用例描述====>加载违法行为
+信息
+2019-05-30 18:26:52,765 - C:\Users\djcps\Desktop\ApiTestFrameWork\test_case\test_case.py[line:80] - INFO: 用例描述====>加载许可证类
+型列表
+2019-05-30 18:26:52,779 - C:\Users\djcps\Desktop\ApiTestFrameWork\test_case\test_case.py[line:80] - INFO: 用例描述====>获取场所信息
+详情
+2019-05-30 19:51:55,383 - C:\Users\djcps\Desktop\ApiTestFrameWork\test_case\test_case.py[line:80] - INFO: 用例描述====>访问百度
+2019-05-30 19:51:56,259 - C:\Users\djcps\Desktop\ApiTestFrameWork\core\testBase.py[line:106] - INFO: 请求方式====>GET
+2019-05-30 19:51:56,259 - C:\Users\djcps\Desktop\ApiTestFrameWork\core\testBase.py[line:107] - INFO: 请求地址====>https://www.baidu.com
+2019-05-30 19:51:56,259 - C:\Users\djcps\Desktop\ApiTestFrameWork\core\testBase.py[line:108] - INFO: 请求头====>""
+2019-05-30 19:51:56,259 - C:\Users\djcps\Desktop\ApiTestFrameWork\core\testBase.py[line:109] - INFO: 请求参数====>""
+2019-05-30 19:51:56,260 - C:\Users\djcps\Desktop\ApiTestFrameWork\core\testBase.py[line:110] - INFO: 请求体====>null
+2019-05-30 19:51:56,260 - C:\Users\djcps\Desktop\ApiTestFrameWork\core\testBase.py[line:111] - INFO: Cookies====>""
+2019-05-30 19:51:56,260 - C:\Users\djcps\Desktop\ApiTestFrameWork\core\testBase.py[line:112] - INFO: 接口响应状态码====>200
+2019-05-30 19:51:56,260 - C:\Users\djcps\Desktop\ApiTestFrameWork\core\testBase.py[line:113] - INFO: 接口响应头为====>{'Accept-Ranges': 'bytes', 'Cache-Control': 'no-cache', 'Connection': 'Keep-Alive', 'Content-Length': '14722', 'Content-Type': 'text/html', 'Date': 'Thu, 30 May 2019 11:51:52 GMT', 'Etag': '"5ce4c43c-3982"', 'Last-Modified': 'Wed, 22 May 2019 03:38:36 GMT', 'P3p': 'CP=" OTI DSP COR IVA OUR IND COM "', 'Pragma': 'no-cache', 'Server': 'BWS/1.1', 'Set-Cookie': 'BAIDUID=5FA09FB5EFC5478AD26FE44DC341A4B3:FG=1; expires=Thu, 31-Dec-37 23:55:55 GMT; max-age=2147483647; path=/; domain=.baidu.com, BIDUPSID=5FA09FB5EFC5478AD26FE44DC341A4B3; expires=Thu, 31-Dec-37 23:55:55 GMT; max-age=2147483647; path=/; domain=.baidu.com, PSTM=1559217112; expires=Thu, 31-Dec-37 23:55:55 GMT; max-age=2147483647; path=/; domain=.baidu.com', 'Vary': 'Accept-Encoding', 'X-Ua-Compatible': 'IE=Edge,chrome=1'}
+2019-05-30 19:51:56,260 - C:\Users\djcps\Desktop\ApiTestFrameWork\core\testBase.py[line:114] - INFO: 接口响应体为====><!DOCTYPE html><!--STATUS OK-->
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<link rel="dns-prefetch" href="//s1.bdstatic.com"/>
+	<link rel="dns-prefetch" href="//t1.baidu.com"/>
+	<link rel="dns-prefetch" href="//t2.baidu.com"/>
+	<link rel="dns-prefetch" href="//t3.baidu.com"/>
+	<link rel="dns-prefetch" href="//t10.baidu.com"/>
+	<link rel="dns-prefetch" href="//t11.baidu.com"/>
+	<link rel="dns-prefetch" href="//t12.baidu.com"/>
+	<link rel="dns-prefetch" href="//b1.bdstatic.com"/>
+	<title>ç¾åº¦ä¸ä¸ï¼ä½ å°±ç¥é</title>
+	<link href="https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/home/css/index.css" rel="stylesheet" type="text/css" />
+	<!--[if lte IE 8]><style index="index" >#content{height:480px\9}#m{top:260px\9}</style><![endif]-->
+	<!--[if IE 8]><style index="index" >#u1 a.mnav,#u1 a.mnav:visited{font-family:simsun}</style><![endif]-->
+	<script>var hashMatch = document.location.href.match(/#+(.*wd=[^&].+)/);if (hashMatch && hashMatch[0] && hashMatch[1]) {document.location.replace("http://"+location.host+"/s?"+hashMatch[1]);}var ns_c = function(){};</script>
+	<script>function h(obj){obj.style.behavior='url(#default#homepage)';var a = obj.setHomePage('//www.baidu.com/');}</script>
+	<noscript><meta http-equiv="refresh" content="0; url=/baidu.html?from=noscript"/></noscript>
+	<script>window._ASYNC_START=new Date().getTime();</script>
+</head>
+<body link="#0000cc"><div id="wrapper" style="display:none;"><div id="u"><a href="//www.baidu.com/gaoji/preferences.html"  onmousedown="return user_c({'fm':'set','tab':'setting','login':'0'})">æç´¢è®¾ç½®</a>|<a id="btop" href="/"  onmousedown="return user_c({'fm':'set','tab':'index','login':'0'})">ç¾åº¦é¦é¡µ</a>|<a id="lb" href="https://passport.baidu.com/v2/?login&tpl=mn&u=http%3A%2F%2Fwww.baidu.com%2F" onclick="return false;"  onmousedown="return user_c({'fm':'set','tab':'login'})">ç»å½</a><a href="https://passport.baidu.com/v2/?reg&regType=1&tpl=mn&u=http%3A%2F%2Fwww.baidu.com%2F"  onmousedown="return user_c({'fm':'set','tab':'reg'})" target="_blank" class="reg">æ³¨å</a></div><div id="head"><div class="s_nav"><a href="/" class="s_logo" onmousedown="return c({'fm':'tab','tab':'logo'})"><img src="//www.baidu.com/img/baidu_jgylogo3.gif" width="117" height="38" border="0" alt="å°ç¾åº¦é¦é¡µ" title="å°ç¾åº¦é¦é¡µ"></a><div class="s_tab" id="s_tab"><a href="http://news.baidu.com/ns?cl=2&rn=20&tn=news&word=" wdfield="word"  onmousedown="return c({'fm':'tab','tab':'news'})">æ°é»</a>&#12288;<b>ç½é¡µ</b>&#12288;<a href="http://tieba.baidu.com/f?kw=&fr=wwwt" wdfield="kw"  onmousedown="return c({'fm':'tab','tab':'tieba'})">è´´å§</a>&#12288;<a href="http://zhidao.baidu.com/q?ct=17&pn=0&tn=ikaslist&rn=10&word=&fr=wwwt" wdfield="word"  onmousedown="return c({'fm':'tab','tab':'zhidao'})">ç¥é</a>&#12288;<a href="http://music.baidu.com/search?fr=ps&key=" wdfield="key"  onmousedown="return c({'fm':'tab','tab':'music'})">é³ä¹</a>&#12288;<a href="http://image.baidu.com/i?tn=baiduimage&ps=1&ct=201326592&lm=-1&cl=2&nc=1&word=" wdfield="word"  onmousedown="return c({'fm':'tab','tab':'pic'})">å¾ç</a>&#12288;<a href="http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=25&word=" wdfield="word"   onmousedown="return c({'fm':'tab','tab':'video'})">è§é¢</a>&#12288;<a href="http://map.baidu.com/m?word=&fr=ps01000" wdfield="word"  onmousedown="return c({'fm':'tab','tab':'map'})">å°å¾</a>&#12288;<a href="http://wenku.baidu.com/search?word=&lm=0&od=0" wdfield="word"  onmousedown="return c({'fm':'tab','tab':'wenku'})">æåº</a>&#12288;<a href="//www.baidu.com/more/"  onmousedown="return c({'fm':'tab','tab':'more'})">æ´å¤Â»</a></div></div><form id="form" name="f" action="/s" class="fm" ><input type="hidden" name="ie" value="utf-8"><input type="hidden" name="f" value="8"><input type="hidden" name="rsv_bp" value="1"><span class="bg s_ipt_wr"><input name="wd" id="kw" class="s_ipt" value="" maxlength="100"></span><span class="bg s_btn_wr"><input type="submit" id="su" value="ç¾åº¦ä¸ä¸" class="bg s_btn" onmousedown="this.className='bg s_btn s_btn_h'" onmouseout="this.className='bg s_btn'"></span><span class="tools"><span id="mHolder"><div id="mCon"><span>è¾å¥æ³</span></div><ul id="mMenu"><li><a href="javascript:;" name="ime_hw">æå</a></li><li><a href="javascript:;" name="ime_py">æ¼é³</a></li><li class="ln"></li><li><a href="javascript:;" name="ime_cl">å³é­</a></li></ul></span><span class="shouji"><strong>æ¨è&nbsp;:&nbsp;</strong><a href="http://w.x.baidu.com/go/mini/8/10000020" onmousedown="return ns_c({'fm':'behs','tab':'bdbrowser'})">ç¾åº¦æµè§å¨ï¼æå¼ç½é¡µå¿«2ç§ï¼</a></span></span></form></div><div id="content"><div id="u1"><a href="http://news.baidu.com" name="tj_trnews" class="mnav">æ°é»</a><a href="http://www.hao123.com" name="tj_trhao123" class="mnav">hao123</a><a href="http://map.baidu.com" name="tj_trmap" class="mnav">å°å¾</a><a href="http://v.baidu.com" name="tj_trvideo" class="mnav">è§é¢</a><a href="http://tieba.baidu.com" name="tj_trtieba" class="mnav">è´´å§</a><a href="https://passport.baidu.com/v2/?login&tpl=mn&u=http%3A%2F%2Fwww.baidu.com%2F" name="tj_login" id="lb" onclick="return false;">ç»å½</a><a href="//www.baidu.com/gaoji/preferences.html" name="tj_settingicon" id="pf">è®¾ç½®</a><a href="//www.baidu.com/more/" name="tj_briicon" id="bri">æ´å¤äº§å</a></div><div id="m"><p id="lg"><img src="//www.baidu.com/img/bd_logo.png" width="270" height="129"></p><p id="nv"><a href="http://news.baidu.com">æ°&nbsp;é»</a>ã<b>ç½&nbsp;é¡µ</b>ã<a href="http://tieba.baidu.com">è´´&nbsp;å§</a>ã<a href="http://zhidao.baidu.com">ç¥&nbsp;é</a>ã<a href="http://music.baidu.com">é³&nbsp;ä¹</a>ã<a href="http://image.baidu.com">å¾&nbsp;ç</a>ã<a href="http://v.baidu.com">è§&nbsp;é¢</a>ã<a href="http://map.baidu.com">å°&nbsp;å¾</a></p><div id="fm"><form id="form1" name="f1" action="/s" class="fm"><span class="bg s_ipt_wr"><input type="text" name="wd" id="kw1" maxlength="100" class="s_ipt"></span><input type="hidden" name="rsv_bp" value="0"><input type=hidden name=ch value=""><input type=hidden name=tn value="baidu"><input type=hidden name=bar value=""><input type="hidden" name="rsv_spt" value="3"><input type="hidden" name="ie" value="utf-8"><span class="bg s_btn_wr"><input type="submit" value="ç¾åº¦ä¸ä¸" id="su1" class="bg s_btn" onmousedown="this.className='bg s_btn s_btn_h'" onmouseout="this.className='bg s_btn'"></span></form><span class="tools"><span id="mHolder1"><div id="mCon1"><span>è¾å¥æ³</span></div></span></span><ul id="mMenu1"><div class="mMenu1-tip-arrow"><em></em><ins></ins></div><li><a href="javascript:;" name="ime_hw">æå</a></li><li><a href="javascript:;" name="ime_py">æ¼é³</a></li><li class="ln"></li><li><a href="javascript:;" name="ime_cl">å³é­</a></li></ul></div><p id="lk"><a href="http://baike.baidu.com">ç¾ç§</a>ã<a href="http://wenku.baidu.com">æåº</a>ã<a href="http://www.hao123.com">hao123</a><span>&nbsp;|&nbsp;<a href="//www.baidu.com/more/">æ´å¤&gt;&gt;</a></span></p><p id="lm"></p></div></div><div id="ftCon"><div id="ftConw"><p id="lh"><a id="seth" onClick="h(this)" href="/" onmousedown="return ns_c({'fm':'behs','tab':'homepage','pos':0})">æç¾åº¦è®¾ä¸ºä¸»é¡µ</a><a id="setf" href="//www.baidu.com/cache/sethelp/index.html" onmousedown="return ns_c({'fm':'behs','tab':'favorites','pos':0})" target="_blank">æç¾åº¦è®¾ä¸ºä¸»é¡µ</a><a onmousedown="return ns_c({'fm':'behs','tab':'tj_about'})" href="http://home.baidu.com">å³äºç¾åº¦</a><a onmousedown="return ns_c({'fm':'behs','tab':'tj_about_en'})" href="http://ir.baidu.com">About Baidu</a></p><p id="cp">&copy;2018&nbsp;Baidu&nbsp;<a href="/duty/" name="tj_duty">ä½¿ç¨ç¾åº¦åå¿è¯»</a>&nbsp;äº¬ICPè¯030173å·&nbsp;<img src="http://s1.bdstatic.com/r/www/cache/static/global/img/gs_237f015b.gif"></p></div></div><div id="wrapper_wrapper"></div></div><div class="c-tips-container" id="c-tips-container"></div>
+<script>window.__async_strategy=2;</script>
+<script>var bds={se:{},su:{urdata:[],urSendClick:function(){}},util:{},use:{},comm : {domain:"http://www.baidu.com",ubsurl : "http://sclick.baidu.com/w.gif",tn:"baidu",queryEnc:"",queryId:"",inter:"",templateName:"baidu",sugHost : "http://suggestion.baidu.com/su",query : "",qid : "",cid : "",sid : "",indexSid : "",stoken : "",serverTime : "",user : "",username : "",loginAction : [],useFavo : "",pinyin : "",favoOn : "",curResultNum:"",rightResultExist:false,protectNum:0,zxlNum:0,pageNum:1,pageSize:10,newindex:0,async:1,maxPreloadThread:5,maxPreloadTimes:10,preloadMouseMoveDistance:5,switchAddMask:false,isDebug:false,ishome : 1},_base64:{domain : "http://b1.bdstatic.com/",b64Exp : -1,pdc : 0}};var name,navigate,al_arr=[];var selfOpen = window.open;eval("var open = selfOpen;");var isIE=navigator.userAgent.indexOf("MSIE")!=-1&&!window.opera;var E = bds.ecom= {};bds.se.mon = {'loadedItems':[],'load':function(){},'srvt':-1};try {bds.se.mon.srvt = parseInt(document.cookie.match(new RegExp("(^| )BDSVRTM=([^;]*)(;|$)"))[2]);document.cookie="BDSVRTM=;expires=Sat, 01 Jan 2000 00:00:00 GMT"; }catch(e){}</script>
+<script>if(!location.hash.match(/[^a-zA-Z0-9]wd=/)){document.getElementById("ftCon").style.display='block';document.getElementById("u1").style.display='block';document.getElementById("content").style.display='block';document.getElementById("wrapper").style.display='block';setTimeout(function(){try{document.getElementById("kw1").focus();document.getElementById("kw1").parentNode.className += ' iptfocus';}catch(e){}},0);}</script>
+<script type="text/javascript" src="https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/jquery/jquery-1.10.2.min_f2fb5194.js"></script>
+<script>(function(){var index_content = $('#content');var index_foot= $('#ftCon');var index_css= $('head [index]');var index_u= $('#u1');var result_u= $('#u');var wrapper=$("#wrapper");window.index_on=function(){index_css.insertAfter("meta:eq(0)");result_common_css.remove();result_aladdin_css.remove();result_sug_css.remove();index_content.show();index_foot.show();index_u.show();result_u.hide();wrapper.show();if(bds.su&&bds.su.U&&bds.su.U.homeInit){bds.su.U.homeInit();}setTimeout(function(){try{$('#kw1').get(0).focus();window.sugIndex.start();}catch(e){}},0);if(typeof initIndex=='function'){initIndex();}};window.index_off=function(){index_css.remove();index_content.hide();index_foot.hide();index_u.hide();result_u.show();result_aladdin_css.insertAfter("meta:eq(0)");result_common_css.insertAfter("meta:eq(0)");result_sug_css.insertAfter("meta:eq(0)");wrapper.show();};})();</script>
+<script>window.__switch_add_mask=1;</script>
+<script type="text/javascript" src="https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/global/js/instant_search_newi_redirect1_20bf4036.js"></script>
+<script>initPreload();$("#u,#u1").delegate("#lb",'click',function(){try{bds.se.login.open();}catch(e){}});if(navigator.cookieEnabled){document.cookie="NOJS=;expires=Sat, 01 Jan 2000 00:00:00 GMT";}</script>
+<script>$(function(){for(i=0;i<3;i++){u($($('.s_ipt_wr')[i]),$($('.s_ipt')[i]),$($('.s_btn_wr')[i]),$($('.s_btn')[i]));}function u(iptwr,ipt,btnwr,btn){if(iptwr && ipt){iptwr.on('mouseover',function(){iptwr.addClass('ipthover');}).on('mouseout',function(){iptwr.removeClass('ipthover');}).on('click',function(){ipt.focus();});ipt.on('focus',function(){iptwr.addClass('iptfocus');}).on('blur',function(){iptwr.removeClass('iptfocus');}).on('render',function(e){var $s = iptwr.parent().find('.bdsug');var l = $s.find('li').length;if(l>=5){$s.addClass('bdsugbg');}else{$s.removeClass('bdsugbg');}});}if(btnwr && btn){btnwr.on('mouseover',function(){btn.addClass('btnhover');}).on('mouseout',function(){btn.removeClass('btnhover');});}}});</script>
+<script type="text/javascript" src="https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/home/js/bri_7f1fa703.js"></script>
+<script>(function(){var _init=false;window.initIndex=function(){if(_init){return;}_init=true;var w=window,d=document,n=navigator,k=d.f1.wd,a=d.getElementById("nv").getElementsByTagName("a"),isIE=n.userAgent.indexOf("MSIE")!=-1&&!window.opera;(function(){if(/q=([^&]+)/.test(location.search)){k.value=decodeURIComponent(RegExp["\x241"])}})();(function(){var u = G("u1").getElementsByTagName("a"), nv = G("nv").getElementsByTagName("a"), lk = G("lk").getElementsByTagName("a"), un = "";var tj_nv = ["news","tieba","zhidao","mp3","img","video","map"];var tj_lk = ["baike","wenku","hao123","more"];un = bds.comm.user == "" ? "" : bds.comm.user;function _addTJ(obj){addEV(obj, "mousedown", function(e){var e = e || window.event;var target = e.target || e.srcElement;if(target.name){ns_c({'fm':'behs','tab':target.name,'un':encodeURIComponent(un)});}});}for(var i = 0; i < u.length; i++){_addTJ(u[i]);}for(var i = 0; i < nv.length; i++){nv[i].name = 'tj_' + tj_nv[i];}for(var i = 0; i < lk.length; i++){lk[i].name = 'tj_' + tj_lk[i];}})();(function() {var links = {'tj_news': ['word', 'http://news.baidu.com/ns?tn=news&cl=2&rn=20&ct=1&ie=utf-8'],'tj_tieba': ['kw', 'http://tieba.baidu.com/f?ie=utf-8'],'tj_zhidao': ['word', 'http://zhidao.baidu.com/search?pn=0&rn=10&lm=0'],'tj_mp3': ['key', 'http://music.baidu.com/search?fr=ps&ie=utf-8'],'tj_img': ['word', 'http://image.baidu.com/i?ct=201326592&cl=2&nc=1&lm=-1&st=-1&tn=baiduimage&istype=2&fm=&pv=&z=0&ie=utf-8'],'tj_video': ['word', 'http://video.baidu.com/v?ct=301989888&s=25&ie=utf-8'],'tj_map': ['wd', 'http://map.baidu.com/?newmap=1&ie=utf-8&s=s'],'tj_baike': ['word', 'http://baike.baidu.com/search/word?pic=1&sug=1&enc=utf8'],'tj_wenku': ['word', 'http://wenku.baidu.com/search?ie=utf-8']};var domArr = [G('nv'), G('lk'),G('cp')],kw = G('kw1');for (var i = 0, l = domArr.length; i < l; i++) {domArr[i].onmousedown = function(e) {e = e || window.event;var target = e.target || e.srcElement,name = target.getAttribute('name'),items = links[name],reg = new RegExp('^\\s+|\\s+\x24'),key = kw.value.replace(reg, '');if (items) {if (key.length > 0) {var wd = items[0], url = items[1],url = url + ( name === 'tj_map' ? encodeURIComponent('&' + wd + '=' + key) : ( ( url.indexOf('?') > 0 ? '&' : '?' ) + wd + '=' + encodeURIComponent(key) ) );target.href = url;} else {target.href = target.href.match(new RegExp('^http:\/\/.+\.baidu\.com'))[0];}}name && ns_c({'fm': 'behs','tab': name,'query': encodeURIComponent(key),'un': encodeURIComponent(bds.comm.user || '') });};}})();};if(window.pageState==0){initIndex();}})();document.cookie = 'IS_STATIC=1;expires=' + new Date(new Date().getTime() + 10*60*1000).toGMTString();</script>
+</body></html>
+
+2019-05-30 20:08:19,102 - C:\Users\djcps\Desktop\ApiTestFrameWork\test_case\test_case.py[line:80] - INFO: 用例描述====>访问百度
+2019-05-30 20:08:20,006 - C:\Users\djcps\Desktop\ApiTestFrameWork\core\testBase.py[line:106] - INFO: 请求方式====>GET
+2019-05-30 20:08:20,007 - C:\Users\djcps\Desktop\ApiTestFrameWork\core\testBase.py[line:107] - INFO: 请求地址====>https://www.baidu.com
+2019-05-30 20:08:20,007 - C:\Users\djcps\Desktop\ApiTestFrameWork\core\testBase.py[line:108] - INFO: 请求头====>""
+2019-05-30 20:08:20,007 - C:\Users\djcps\Desktop\ApiTestFrameWork\core\testBase.py[line:109] - INFO: 请求参数====>""
+2019-05-30 20:08:20,010 - C:\Users\djcps\Desktop\ApiTestFrameWork\core\testBase.py[line:110] - INFO: 请求体====>null
+2019-05-30 20:08:20,011 - C:\Users\djcps\Desktop\ApiTestFrameWork\core\testBase.py[line:111] - INFO: Cookies====>""
+2019-05-30 20:08:20,011 - C:\Users\djcps\Desktop\ApiTestFrameWork\core\testBase.py[line:112] - INFO: 接口响应状态码====>200
+2019-05-30 20:08:20,011 - C:\Users\djcps\Desktop\ApiTestFrameWork\core\testBase.py[line:113] - INFO: 接口响应头为====>{'Accept-Ranges': 'bytes', 'Cache-Control': 'no-cache', 'Connection': 'Keep-Alive', 'Content-Length': '14722', 'Content-Type': 'text/html', 'Date': 'Thu, 30 May 2019 12:08:16 GMT', 'Etag': '"5ce4c43c-3982"', 'Last-Modified': 'Wed, 22 May 2019 03:38:36 GMT', 'P3p': 'CP=" OTI DSP COR IVA OUR IND COM "', 'Pragma': 'no-cache', 'Server': 'BWS/1.1', 'Set-Cookie': 'BAIDUID=688700E8025532EE800B104F855D866A:FG=1; expires=Thu, 31-Dec-37 23:55:55 GMT; max-age=2147483647; path=/; domain=.baidu.com, BIDUPSID=688700E8025532EE800B104F855D866A; expires=Thu, 31-Dec-37 23:55:55 GMT; max-age=2147483647; path=/; domain=.baidu.com, PSTM=1559218096; expires=Thu, 31-Dec-37 23:55:55 GMT; max-age=2147483647; path=/; domain=.baidu.com', 'Vary': 'Accept-Encoding', 'X-Ua-Compatible': 'IE=Edge,chrome=1'}
+2019-05-30 20:08:20,012 - C:\Users\djcps\Desktop\ApiTestFrameWork\core\testBase.py[line:114] - INFO: 接口响应体为====><!DOCTYPE html><!--STATUS OK-->
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<link rel="dns-prefetch" href="//s1.bdstatic.com"/>
+	<link rel="dns-prefetch" href="//t1.baidu.com"/>
+	<link rel="dns-prefetch" href="//t2.baidu.com"/>
+	<link rel="dns-prefetch" href="//t3.baidu.com"/>
+	<link rel="dns-prefetch" href="//t10.baidu.com"/>
+	<link rel="dns-prefetch" href="//t11.baidu.com"/>
+	<link rel="dns-prefetch" href="//t12.baidu.com"/>
+	<link rel="dns-prefetch" href="//b1.bdstatic.com"/>
+	<title>ç¾åº¦ä¸ä¸ï¼ä½ å°±ç¥é</title>
+	<link href="https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/home/css/index.css" rel="stylesheet" type="text/css" />
+	<!--[if lte IE 8]><style index="index" >#content{height:480px\9}#m{top:260px\9}</style><![endif]-->
+	<!--[if IE 8]><style index="index" >#u1 a.mnav,#u1 a.mnav:visited{font-family:simsun}</style><![endif]-->
+	<script>var hashMatch = document.location.href.match(/#+(.*wd=[^&].+)/);if (hashMatch && hashMatch[0] && hashMatch[1]) {document.location.replace("http://"+location.host+"/s?"+hashMatch[1]);}var ns_c = function(){};</script>
+	<script>function h(obj){obj.style.behavior='url(#default#homepage)';var a = obj.setHomePage('//www.baidu.com/');}</script>
+	<noscript><meta http-equiv="refresh" content="0; url=/baidu.html?from=noscript"/></noscript>
+	<script>window._ASYNC_START=new Date().getTime();</script>
+</head>
+<body link="#0000cc"><div id="wrapper" style="display:none;"><div id="u"><a href="//www.baidu.com/gaoji/preferences.html"  onmousedown="return user_c({'fm':'set','tab':'setting','login':'0'})">æç´¢è®¾ç½®</a>|<a id="btop" href="/"  onmousedown="return user_c({'fm':'set','tab':'index','login':'0'})">ç¾åº¦é¦é¡µ</a>|<a id="lb" href="https://passport.baidu.com/v2/?login&tpl=mn&u=http%3A%2F%2Fwww.baidu.com%2F" onclick="return false;"  onmousedown="return user_c({'fm':'set','tab':'login'})">ç»å½</a><a href="https://passport.baidu.com/v2/?reg&regType=1&tpl=mn&u=http%3A%2F%2Fwww.baidu.com%2F"  onmousedown="return user_c({'fm':'set','tab':'reg'})" target="_blank" class="reg">æ³¨å</a></div><div id="head"><div class="s_nav"><a href="/" class="s_logo" onmousedown="return c({'fm':'tab','tab':'logo'})"><img src="//www.baidu.com/img/baidu_jgylogo3.gif" width="117" height="38" border="0" alt="å°ç¾åº¦é¦é¡µ" title="å°ç¾åº¦é¦é¡µ"></a><div class="s_tab" id="s_tab"><a href="http://news.baidu.com/ns?cl=2&rn=20&tn=news&word=" wdfield="word"  onmousedown="return c({'fm':'tab','tab':'news'})">æ°é»</a>&#12288;<b>ç½é¡µ</b>&#12288;<a href="http://tieba.baidu.com/f?kw=&fr=wwwt" wdfield="kw"  onmousedown="return c({'fm':'tab','tab':'tieba'})">è´´å§</a>&#12288;<a href="http://zhidao.baidu.com/q?ct=17&pn=0&tn=ikaslist&rn=10&word=&fr=wwwt" wdfield="word"  onmousedown="return c({'fm':'tab','tab':'zhidao'})">ç¥é</a>&#12288;<a href="http://music.baidu.com/search?fr=ps&key=" wdfield="key"  onmousedown="return c({'fm':'tab','tab':'music'})">é³ä¹</a>&#12288;<a href="http://image.baidu.com/i?tn=baiduimage&ps=1&ct=201326592&lm=-1&cl=2&nc=1&word=" wdfield="word"  onmousedown="return c({'fm':'tab','tab':'pic'})">å¾ç</a>&#12288;<a href="http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=25&word=" wdfield="word"   onmousedown="return c({'fm':'tab','tab':'video'})">è§é¢</a>&#12288;<a href="http://map.baidu.com/m?word=&fr=ps01000" wdfield="word"  onmousedown="return c({'fm':'tab','tab':'map'})">å°å¾</a>&#12288;<a href="http://wenku.baidu.com/search?word=&lm=0&od=0" wdfield="word"  onmousedown="return c({'fm':'tab','tab':'wenku'})">æåº</a>&#12288;<a href="//www.baidu.com/more/"  onmousedown="return c({'fm':'tab','tab':'more'})">æ´å¤Â»</a></div></div><form id="form" name="f" action="/s" class="fm" ><input type="hidden" name="ie" value="utf-8"><input type="hidden" name="f" value="8"><input type="hidden" name="rsv_bp" value="1"><span class="bg s_ipt_wr"><input name="wd" id="kw" class="s_ipt" value="" maxlength="100"></span><span class="bg s_btn_wr"><input type="submit" id="su" value="ç¾åº¦ä¸ä¸" class="bg s_btn" onmousedown="this.className='bg s_btn s_btn_h'" onmouseout="this.className='bg s_btn'"></span><span class="tools"><span id="mHolder"><div id="mCon"><span>è¾å¥æ³</span></div><ul id="mMenu"><li><a href="javascript:;" name="ime_hw">æå</a></li><li><a href="javascript:;" name="ime_py">æ¼é³</a></li><li class="ln"></li><li><a href="javascript:;" name="ime_cl">å³é­</a></li></ul></span><span class="shouji"><strong>æ¨è&nbsp;:&nbsp;</strong><a href="http://w.x.baidu.com/go/mini/8/10000020" onmousedown="return ns_c({'fm':'behs','tab':'bdbrowser'})">ç¾åº¦æµè§å¨ï¼æå¼ç½é¡µå¿«2ç§ï¼</a></span></span></form></div><div id="content"><div id="u1"><a href="http://news.baidu.com" name="tj_trnews" class="mnav">æ°é»</a><a href="http://www.hao123.com" name="tj_trhao123" class="mnav">hao123</a><a href="http://map.baidu.com" name="tj_trmap" class="mnav">å°å¾</a><a href="http://v.baidu.com" name="tj_trvideo" class="mnav">è§é¢</a><a href="http://tieba.baidu.com" name="tj_trtieba" class="mnav">è´´å§</a><a href="https://passport.baidu.com/v2/?login&tpl=mn&u=http%3A%2F%2Fwww.baidu.com%2F" name="tj_login" id="lb" onclick="return false;">ç»å½</a><a href="//www.baidu.com/gaoji/preferences.html" name="tj_settingicon" id="pf">è®¾ç½®</a><a href="//www.baidu.com/more/" name="tj_briicon" id="bri">æ´å¤äº§å</a></div><div id="m"><p id="lg"><img src="//www.baidu.com/img/bd_logo.png" width="270" height="129"></p><p id="nv"><a href="http://news.baidu.com">æ°&nbsp;é»</a>ã<b>ç½&nbsp;é¡µ</b>ã<a href="http://tieba.baidu.com">è´´&nbsp;å§</a>ã<a href="http://zhidao.baidu.com">ç¥&nbsp;é</a>ã<a href="http://music.baidu.com">é³&nbsp;ä¹</a>ã<a href="http://image.baidu.com">å¾&nbsp;ç</a>ã<a href="http://v.baidu.com">è§&nbsp;é¢</a>ã<a href="http://map.baidu.com">å°&nbsp;å¾</a></p><div id="fm"><form id="form1" name="f1" action="/s" class="fm"><span class="bg s_ipt_wr"><input type="text" name="wd" id="kw1" maxlength="100" class="s_ipt"></span><input type="hidden" name="rsv_bp" value="0"><input type=hidden name=ch value=""><input type=hidden name=tn value="baidu"><input type=hidden name=bar value=""><input type="hidden" name="rsv_spt" value="3"><input type="hidden" name="ie" value="utf-8"><span class="bg s_btn_wr"><input type="submit" value="ç¾åº¦ä¸ä¸" id="su1" class="bg s_btn" onmousedown="this.className='bg s_btn s_btn_h'" onmouseout="this.className='bg s_btn'"></span></form><span class="tools"><span id="mHolder1"><div id="mCon1"><span>è¾å¥æ³</span></div></span></span><ul id="mMenu1"><div class="mMenu1-tip-arrow"><em></em><ins></ins></div><li><a href="javascript:;" name="ime_hw">æå</a></li><li><a href="javascript:;" name="ime_py">æ¼é³</a></li><li class="ln"></li><li><a href="javascript:;" name="ime_cl">å³é­</a></li></ul></div><p id="lk"><a href="http://baike.baidu.com">ç¾ç§</a>ã<a href="http://wenku.baidu.com">æåº</a>ã<a href="http://www.hao123.com">hao123</a><span>&nbsp;|&nbsp;<a href="//www.baidu.com/more/">æ´å¤&gt;&gt;</a></span></p><p id="lm"></p></div></div><div id="ftCon"><div id="ftConw"><p id="lh"><a id="seth" onClick="h(this)" href="/" onmousedown="return ns_c({'fm':'behs','tab':'homepage','pos':0})">æç¾åº¦è®¾ä¸ºä¸»é¡µ</a><a id="setf" href="//www.baidu.com/cache/sethelp/index.html" onmousedown="return ns_c({'fm':'behs','tab':'favorites','pos':0})" target="_blank">æç¾åº¦è®¾ä¸ºä¸»é¡µ</a><a onmousedown="return ns_c({'fm':'behs','tab':'tj_about'})" href="http://home.baidu.com">å³äºç¾åº¦</a><a onmousedown="return ns_c({'fm':'behs','tab':'tj_about_en'})" href="http://ir.baidu.com">About Baidu</a></p><p id="cp">&copy;2018&nbsp;Baidu&nbsp;<a href="/duty/" name="tj_duty">ä½¿ç¨ç¾åº¦åå¿è¯»</a>&nbsp;äº¬ICPè¯030173å·&nbsp;<img src="http://s1.bdstatic.com/r/www/cache/static/global/img/gs_237f015b.gif"></p></div></div><div id="wrapper_wrapper"></div></div><div class="c-tips-container" id="c-tips-container"></div>
+<script>window.__async_strategy=2;</script>
+<script>var bds={se:{},su:{urdata:[],urSendClick:function(){}},util:{},use:{},comm : {domain:"http://www.baidu.com",ubsurl : "http://sclick.baidu.com/w.gif",tn:"baidu",queryEnc:"",queryId:"",inter:"",templateName:"baidu",sugHost : "http://suggestion.baidu.com/su",query : "",qid : "",cid : "",sid : "",indexSid : "",stoken : "",serverTime : "",user : "",username : "",loginAction : [],useFavo : "",pinyin : "",favoOn : "",curResultNum:"",rightResultExist:false,protectNum:0,zxlNum:0,pageNum:1,pageSize:10,newindex:0,async:1,maxPreloadThread:5,maxPreloadTimes:10,preloadMouseMoveDistance:5,switchAddMask:false,isDebug:false,ishome : 1},_base64:{domain : "http://b1.bdstatic.com/",b64Exp : -1,pdc : 0}};var name,navigate,al_arr=[];var selfOpen = window.open;eval("var open = selfOpen;");var isIE=navigator.userAgent.indexOf("MSIE")!=-1&&!window.opera;var E = bds.ecom= {};bds.se.mon = {'loadedItems':[],'load':function(){},'srvt':-1};try {bds.se.mon.srvt = parseInt(document.cookie.match(new RegExp("(^| )BDSVRTM=([^;]*)(;|$)"))[2]);document.cookie="BDSVRTM=;expires=Sat, 01 Jan 2000 00:00:00 GMT"; }catch(e){}</script>
+<script>if(!location.hash.match(/[^a-zA-Z0-9]wd=/)){document.getElementById("ftCon").style.display='block';document.getElementById("u1").style.display='block';document.getElementById("content").style.display='block';document.getElementById("wrapper").style.display='block';setTimeout(function(){try{document.getElementById("kw1").focus();document.getElementById("kw1").parentNode.className += ' iptfocus';}catch(e){}},0);}</script>
+<script type="text/javascript" src="https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/jquery/jquery-1.10.2.min_f2fb5194.js"></script>
+<script>(function(){var index_content = $('#content');var index_foot= $('#ftCon');var index_css= $('head [index]');var index_u= $('#u1');var result_u= $('#u');var wrapper=$("#wrapper");window.index_on=function(){index_css.insertAfter("meta:eq(0)");result_common_css.remove();result_aladdin_css.remove();result_sug_css.remove();index_content.show();index_foot.show();index_u.show();result_u.hide();wrapper.show();if(bds.su&&bds.su.U&&bds.su.U.homeInit){bds.su.U.homeInit();}setTimeout(function(){try{$('#kw1').get(0).focus();window.sugIndex.start();}catch(e){}},0);if(typeof initIndex=='function'){initIndex();}};window.index_off=function(){index_css.remove();index_content.hide();index_foot.hide();index_u.hide();result_u.show();result_aladdin_css.insertAfter("meta:eq(0)");result_common_css.insertAfter("meta:eq(0)");result_sug_css.insertAfter("meta:eq(0)");wrapper.show();};})();</script>
+<script>window.__switch_add_mask=1;</script>
+<script type="text/javascript" src="https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/global/js/instant_search_newi_redirect1_20bf4036.js"></script>
+<script>initPreload();$("#u,#u1").delegate("#lb",'click',function(){try{bds.se.login.open();}catch(e){}});if(navigator.cookieEnabled){document.cookie="NOJS=;expires=Sat, 01 Jan 2000 00:00:00 GMT";}</script>
+<script>$(function(){for(i=0;i<3;i++){u($($('.s_ipt_wr')[i]),$($('.s_ipt')[i]),$($('.s_btn_wr')[i]),$($('.s_btn')[i]));}function u(iptwr,ipt,btnwr,btn){if(iptwr && ipt){iptwr.on('mouseover',function(){iptwr.addClass('ipthover');}).on('mouseout',function(){iptwr.removeClass('ipthover');}).on('click',function(){ipt.focus();});ipt.on('focus',function(){iptwr.addClass('iptfocus');}).on('blur',function(){iptwr.removeClass('iptfocus');}).on('render',function(e){var $s = iptwr.parent().find('.bdsug');var l = $s.find('li').length;if(l>=5){$s.addClass('bdsugbg');}else{$s.removeClass('bdsugbg');}});}if(btnwr && btn){btnwr.on('mouseover',function(){btn.addClass('btnhover');}).on('mouseout',function(){btn.removeClass('btnhover');});}}});</script>
+<script type="text/javascript" src="https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/home/js/bri_7f1fa703.js"></script>
+<script>(function(){var _init=false;window.initIndex=function(){if(_init){return;}_init=true;var w=window,d=document,n=navigator,k=d.f1.wd,a=d.getElementById("nv").getElementsByTagName("a"),isIE=n.userAgent.indexOf("MSIE")!=-1&&!window.opera;(function(){if(/q=([^&]+)/.test(location.search)){k.value=decodeURIComponent(RegExp["\x241"])}})();(function(){var u = G("u1").getElementsByTagName("a"), nv = G("nv").getElementsByTagName("a"), lk = G("lk").getElementsByTagName("a"), un = "";var tj_nv = ["news","tieba","zhidao","mp3","img","video","map"];var tj_lk = ["baike","wenku","hao123","more"];un = bds.comm.user == "" ? "" : bds.comm.user;function _addTJ(obj){addEV(obj, "mousedown", function(e){var e = e || window.event;var target = e.target || e.srcElement;if(target.name){ns_c({'fm':'behs','tab':target.name,'un':encodeURIComponent(un)});}});}for(var i = 0; i < u.length; i++){_addTJ(u[i]);}for(var i = 0; i < nv.length; i++){nv[i].name = 'tj_' + tj_nv[i];}for(var i = 0; i < lk.length; i++){lk[i].name = 'tj_' + tj_lk[i];}})();(function() {var links = {'tj_news': ['word', 'http://news.baidu.com/ns?tn=news&cl=2&rn=20&ct=1&ie=utf-8'],'tj_tieba': ['kw', 'http://tieba.baidu.com/f?ie=utf-8'],'tj_zhidao': ['word', 'http://zhidao.baidu.com/search?pn=0&rn=10&lm=0'],'tj_mp3': ['key', 'http://music.baidu.com/search?fr=ps&ie=utf-8'],'tj_img': ['word', 'http://image.baidu.com/i?ct=201326592&cl=2&nc=1&lm=-1&st=-1&tn=baiduimage&istype=2&fm=&pv=&z=0&ie=utf-8'],'tj_video': ['word', 'http://video.baidu.com/v?ct=301989888&s=25&ie=utf-8'],'tj_map': ['wd', 'http://map.baidu.com/?newmap=1&ie=utf-8&s=s'],'tj_baike': ['word', 'http://baike.baidu.com/search/word?pic=1&sug=1&enc=utf8'],'tj_wenku': ['word', 'http://wenku.baidu.com/search?ie=utf-8']};var domArr = [G('nv'), G('lk'),G('cp')],kw = G('kw1');for (var i = 0, l = domArr.length; i < l; i++) {domArr[i].onmousedown = function(e) {e = e || window.event;var target = e.target || e.srcElement,name = target.getAttribute('name'),items = links[name],reg = new RegExp('^\\s+|\\s+\x24'),key = kw.value.replace(reg, '');if (items) {if (key.length > 0) {var wd = items[0], url = items[1],url = url + ( name === 'tj_map' ? encodeURIComponent('&' + wd + '=' + key) : ( ( url.indexOf('?') > 0 ? '&' : '?' ) + wd + '=' + encodeURIComponent(key) ) );target.href = url;} else {target.href = target.href.match(new RegExp('^http:\/\/.+\.baidu\.com'))[0];}}name && ns_c({'fm': 'behs','tab': name,'query': encodeURIComponent(key),'un': encodeURIComponent(bds.comm.user || '') });};}})();};if(window.pageState==0){initIndex();}})();document.cookie = 'IS_STATIC=1;expires=' + new Date(new Date().getTime() + 10*60*1000).toGMTString();</script>
+</body></html>
+

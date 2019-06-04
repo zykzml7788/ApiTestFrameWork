@@ -31,7 +31,7 @@ def uuid():
     '''
     return uid.uuid1()
 
-def randomInt(length):
+def randomint(length):
     '''
     生成指定长度随机数字
     :param length:
@@ -40,7 +40,7 @@ def randomInt(length):
     s = [str(i) for i in range(10)]
     return ''.join(random.sample(s,length))
 
-def randomStr(length):
+def randomstr(length):
     '''
     生成指定长度随机数字和大小写字母组合
     :param length:
@@ -56,7 +56,7 @@ def now(pattern="%Y-%m-%d %H:%M:%S",hours=0):
     :return:
     '''
 
-    return (datetime.datetime.now() + datetime.timedelta(hours)).strftime(pattern)
+    return (datetime.datetime.now() + datetime.timedelta(hours=hours)).strftime(pattern)
 
 def regex(target_str,pattern,index=0):
     '''
@@ -68,4 +68,5 @@ def regex(target_str,pattern,index=0):
     '''
     results = re.findall(pattern,target_str)
     return results[index] if results != [] else results
+
 

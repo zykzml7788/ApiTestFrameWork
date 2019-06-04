@@ -41,8 +41,8 @@
       <file leaf-file-name="functions.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/functions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="60" column="9" selection-start-line="60" selection-start-column="4" selection-end-line="60" selection-end-column="9" />
+            <state relative-caret-position="1254">
+              <caret line="71" selection-start-line="71" selection-end-line="71" />
             </state>
           </provider>
         </entry>
@@ -50,13 +50,13 @@
       <file leaf-file-name="runCase.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/runCase.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
+            <state relative-caret-position="238">
               <caret line="17" column="60" selection-start-line="17" selection-start-column="60" selection-end-line="17" selection-end-column="60" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
@@ -77,11 +77,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_case.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="test_case.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test_case/test_case.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="607">
-              <caret line="85" column="35" selection-start-line="85" selection-start-column="35" selection-end-line="85" selection-end-column="35" />
+            <state relative-caret-position="217">
+              <caret line="63" column="56" lean-forward="true" selection-start-line="63" selection-start-column="56" selection-end-line="63" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="redis_operate.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db_operate/redis_operate.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="24" column="23" lean-forward="true" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -118,9 +127,10 @@
         <option value="$PROJECT_DIR$/core/readExcel.py" />
         <option value="$PROJECT_DIR$/runCase.py" />
         <option value="$PROJECT_DIR$/requirements.txt" />
-        <option value="$PROJECT_DIR$/test_case/test_case.py" />
         <option value="$PROJECT_DIR$/conf/settings.py" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/test_case/test_case.py" />
+        <option value="$PROJECT_DIR$/core/functions.py" />
       </list>
     </option>
   </component>
@@ -144,6 +154,16 @@
             <path>
               <item name="ApiTestFrameWork" type="b2602c69:ProjectViewProjectNode" />
               <item name="ApiTestFrameWork" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ApiTestFrameWork" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ApiTestFrameWork" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ApiTestFrameWork" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ApiTestFrameWork" type="462c0819:PsiDirectoryNode" />
+              <item name="test_case" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -172,7 +192,25 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.py.test for test_case.Test">
+  <component name="RunManager" selected="Python tests.py.test in test_case.py">
+    <configuration name="functions" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="ApiTestFrameWork" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/core" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/core/functions.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="runCase" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ApiTestFrameWork" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -205,12 +243,30 @@
       <option name="_new_target" value="&quot;test_case.Test&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
+    <configuration name="py.test in test_case.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="ApiTestFrameWork" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_case" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test_case/test_case.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+    </configuration>
     <list>
       <item itemvalue="Python.runCase" />
       <item itemvalue="Python tests.py.test for test_case.Test" />
+      <item itemvalue="Python.functions" />
+      <item itemvalue="Python tests.py.test in test_case.py" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.py.test in test_case.py" />
+        <item itemvalue="Python.functions" />
         <item itemvalue="Python tests.py.test for test_case.Test" />
         <item itemvalue="Python.runCase" />
       </list>
@@ -230,11 +286,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="py_test_for_test_case_Test - 2019.05.30 at 20h 08m 03s.xml">
-      <configuration name="py.test for test_case.Test" configurationId="tests" />
+    <history-entry file="py_test_in_test_case_py - 2019.06.04 at 09h 59m 40s.xml">
+      <configuration name="py.test in test_case.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_for_test_case_Test - 2019.05.30 at 20h 08m 20s.xml">
-      <configuration name="py.test for test_case.Test" configurationId="tests" />
+    <history-entry file="py_test_in_test_case_py - 2019.06.04 at 10h 00m 46s.xml">
+      <configuration name="py.test in test_case.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_test_case_py - 2019.06.04 at 10h 01m 37s.xml">
+      <configuration name="py.test in test_case.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_test_case_py - 2019.06.04 at 10h 02m 52s.xml">
+      <configuration name="py.test in test_case.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_test_case_py - 2019.06.04 at 10h 06m 38s.xml">
+      <configuration name="py.test in test_case.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_test_case_py - 2019.06.04 at 10h 07m 23s.xml">
+      <configuration name="py.test in test_case.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_test_case_py - 2019.06.04 at 10h 07m 55s.xml">
+      <configuration name="py.test in test_case.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_test_case_py - 2019.06.04 at 10h 08m 51s.xml">
+      <configuration name="py.test in test_case.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_test_case_py - 2019.06.04 at 10h 08m 55s.xml">
+      <configuration name="py.test in test_case.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_test_case_py - 2019.06.04 at 10h 17m 12s.xml">
+      <configuration name="py.test in test_case.py" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -249,15 +329,15 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49917355" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49917355" visible="true" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3289256" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.22644629" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.43305784" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info id="Structure" order="1" sideWeight="0.5008264" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.4876033" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.4231405" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.5123967" />
       <window_info id="Favorites" order="2" sideWeight="0.5008264" side_tool="true" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -273,13 +353,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="6" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/core/logger.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/xlrd/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="331">
@@ -297,17 +374,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_case/test_case.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="607">
-          <caret line="85" column="35" selection-start-line="85" selection-start-column="35" selection-end-line="85" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/conf/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/python/Lib/re.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="213" column="16" selection-start-line="213" selection-start-column="16" selection-end-line="213" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db_operate/redis_operate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="24" column="23" lean-forward="true" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -318,19 +402,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/runCase.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="60" selection-start-line="17" selection-start-column="60" selection-end-line="17" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/functions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="60" column="9" selection-start-line="60" selection-start-column="4" selection-end-line="60" selection-end-column="9" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/core/logger.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
@@ -339,6 +412,34 @@
             <caret line="36" column="32" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runCase.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="17" column="60" selection-start-line="17" selection-start-column="60" selection-end-line="17" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/2and3/datetime.pyi">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="132" lean-forward="true" selection-start-line="132" selection-end-line="132" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/functions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1254">
+          <caret line="71" selection-start-line="71" selection-end-line="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_case/test_case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="63" column="56" lean-forward="true" selection-start-line="63" selection-start-column="56" selection-end-line="63" selection-end-column="56" />
         </state>
       </provider>
     </entry>

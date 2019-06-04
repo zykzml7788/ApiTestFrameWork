@@ -28,7 +28,7 @@ class Test(unittest.TestCase):
     #识别${key}的正则表达式
     EXPR = '\$\{(.*?)\}'
     #识别函数助手
-    FUNC_EXPR = '__[a-z A-Z]*\(\)'
+    FUNC_EXPR = '__.*?\(.*?\)'
 
     def save_date(self,source,key,jexpr):
         '''
@@ -59,7 +59,9 @@ class Test(unittest.TestCase):
         #遍历所有函数助手并执行，结束后替换
         funcs = re.findall(self.FUNC_EXPR, string)
         for func in funcs:
-            fuc = func.split('__')[1].lower()
+            fuc = func.split('__')[1]
+            fuc_name = fuc.split("(")[0]
+            fuc = fuc.replace(fuc_name,fuc_name.lower())
             value = eval(fuc)
             string = string.replace(func,str(value))
         return string
