@@ -3,23 +3,40 @@
 
 
 
-import os
-import sys
-path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-# print(path)
-sys.path.insert(0, path)
-import redis
-import json
-from conf.settings import REDIS_HOST
-from conf.settings import REDIS_PORT
-from conf.settings import REDIS_DB
-from conf.settings import REDIS_PASSWORD
 
 
-# r = redis.Redis(host='127.0.0.1',port=6379,db=0,password='uncleyong@redis123123')
-r = redis.Redis(host=REDIS_HOST,port=REDIS_PORT,db=REDIS_DB,password=REDIS_PASSWORD)
-# 往redis中加一个短信验证码，模拟手机发送短信的功能
-r.set('verification_code:register13811228811','{"validateCode":"111111","time":"1526523665998"}')
-# res = json.loads(r.get('verification_code:register13811228811').decode('utf-8'))
-# print(res,type(res))
-# print(res['validateCode'])
+from conf.settings import REDIS_HOST,REDIS_PASSWORD,REDIS_PORT
+
+
+class RedisOperate():
+    '''
+        redis执行器
+    '''
+    def __init__(self,db):
+        import redis
+        self.redis = redis.Redis(host=REDIS_HOST,port=REDIS_PORT,db=db,password=REDIS_PASSWORD)
+
+    def get(self,key):
+        '''
+        获取redis的key值
+        :param key:
+        :return:
+        '''
+        return str(self.redis.get(key),encoding="utf-8")
+
+    def set(self,key,value,ex=None,px=None,nx=None,xx=None):
+        '''
+        设置redis的key值,可设置过期时间
+        :param key:
+        :param value:
+        :param ex:
+        :param px:
+        :param nx:
+        :param xx:
+        :return:
+        '''
+        self.redis.set(key,value,ex,px,nx,xx)
+
+if __name__ == '__main__':
+    print(RedisOperate(0).get("name"))
+    RedisOperate(1).set("name","baba")

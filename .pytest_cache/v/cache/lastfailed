@@ -11,5 +11,6 @@
   "test_case/test_case.py::Test::test__12": true,
   "test_case/test_case.py::Test::test__13": true,
   "test_case/test_case.py::Test::test__14": true,
-  "test_case/test_case.py::Test::test__15": true
+  "test_case/test_case.py::Test::test__15": true,
+  "test_case/test_case.py::Test::test__2": true
 }

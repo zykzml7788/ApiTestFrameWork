@@ -13,18 +13,17 @@ REPORT_PATH =  os.path.join(BASE_PATH,'report/')
 # 定义日志文件的路径
 LOG_PATH = os.path.join(BASE_PATH,'log/log.txt')
 
-# oracle数据库的连接信息
-DB_NAME = 'uncleyong'
+# mysql数据库的连接信息
+DB_NAME = 'root'
 DB_PASSWORD = '123456'
 DB_IP = '127.0.0.1'
-DB = 'oracledb'
+PORT = 3306
 
 # redis数据库的连接信息
 # r = redis.Redis(host='127.0.0.1',port=6379,db=0,password='uncleyong@redis123123')
 REDIS_HOST = '127.0.0.1'
 REDIS_PORT = 6379
-REDIS_DB = 0
-REDIS_PASSWORD = 'uncleyong@redis123'
+REDIS_PASSWORD = ''
 
 # print(BASE_PATH)
 # print(TESTCASE_PATH)

@@ -77,7 +77,7 @@ class BaseTest(requests.Session):
                 files["{}".format(filename)] = file
                 res = self.request('POST', url, headers=headers, params=params,data=data,
                                files=files,json=json,cookies=cookies,verify=False)
-            self.api_log('POST', url, headers=headers, params=params,json=data,file=filepath, cookies=cookies,
+            self.api_log('UPLOAD', url, headers=headers, params=params,json=data,file=filepath, cookies=cookies,
                          code=res.status_code, res_text=res.text,res_header=res.headers)
             return res
 
