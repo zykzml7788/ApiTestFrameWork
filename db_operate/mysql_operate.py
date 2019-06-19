@@ -35,6 +35,7 @@ class MySQLOperate():
         if sql.lower().startswith("select"):
             return cursor.fetchone()
         else:
+            self.db.commit()
             return result
         # return cursor.fetchone()
 
