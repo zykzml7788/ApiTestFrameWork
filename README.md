@@ -6,6 +6,7 @@
     - 支持多sheet编写测试用例，一个sheet编写一个业务流程
     - 根据sheet名称，自动生成测试用例集合
     - 优化之前响应参数错误，jsonpath取值失败的问题，抛出keyError，优化提示
+    - sheet之间关联数据保持隔离性，每个sheet拥有唯一id识别
     - 后续继续开发：
         1.setupSheet的设计，在所有sheet执行前执行，主要用于获取token,解决登入问题
         2.尝试多sheet并发执行
