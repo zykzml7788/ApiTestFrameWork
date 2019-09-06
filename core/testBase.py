@@ -68,6 +68,49 @@ class BaseTest(requests.Session):
             logger.error("接口请求异常,原因：{}".format(e))
             raise e
 
+    def put_request(self,url,headers=None,data=None,json=None,params=None,cookies=None):
+        '''
+        put请求方法
+        :param url: 接口地址
+        :param headers: 请求头
+        :param json: 请求体
+        :param params: 请求参数
+        :param cookies:
+        :return:
+        '''
+        try:
+            res = self.request('PUT', url, headers=headers, params=params,data=data,
+                               json=json,cookies=cookies,verify=False)
+            self.api_log('PUT', url, headers=headers, params=params,json=json, cookies=cookies,
+                         code=res.status_code, res_text=res.text,res_header=res.headers)
+            return res
+
+        except Exception as e:
+            logger.error("接口请求异常,原因：{}".format(e))
+            raise e
+
+    def delete_request(self,url,headers=None,data=None,json=None,params=None,cookies=None):
+        '''
+        delete请求方法
+        :param url: 接口地址
+        :param headers: 请求头
+        :param json: 请求体
+        :param params: 请求参数
+        :param cookies:
+        :return:
+        '''
+        try:
+            res = self.request('DELETE', url, headers=headers, params=params,data=data,
+                               json=json,cookies=cookies,verify=False)
+            self.api_log('DELETE', url, headers=headers, params=params,json=json, cookies=cookies,
+                         code=res.status_code, res_text=res.text,res_header=res.headers)
+            return res
+
+        except Exception as e:
+            logger.error("接口请求异常,原因：{}".format(e))
+            raise e
+
+
     def upload_request(self,url,headers=None,data=None,files=None,json=None,params=None,cookies=None):
         try:
 

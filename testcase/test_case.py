@@ -171,11 +171,15 @@ def test_{sheet}(self,descrption,url,method,headers,cookies,params,body,file,ver
         res = self.request.get_request(url=url,params=params,headers=headers,cookies=cookies)
     elif method.upper() == 'POST':
         res = self.request.post_request(url=url,headers=headers,cookies=cookies,params=params,json=body)
-    if method.upper() == 'UPLOAD':
+    elif method.upper() == 'UPLOAD':
         res = self.request.upload_request(url=url,headers=headers,cookies=cookies,params=params,data=body,files=file)
+    elif method.upper() == 'PUT':
+        res = self.request.put_request(url=url,headers=headers,cookies=cookies,params=params,data=body)
+    elif method.upper() == 'DELETE':
+        res = self.request.delete_request(url=url,headers=headers,cookies=cookies,params=params,data=body)
     else:
-        #待扩充，如PUT,DELETE方法
-        pass
+        pass # 待扩展
+        
     if saves:
         # 遍历saves
         for save in saves.split(";"):
