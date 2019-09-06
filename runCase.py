@@ -15,4 +15,5 @@ if __name__ == '__main__':
     import pytest
     import time
     now = time.strftime("%Y-%m-%d_%H_%M_%S")
-    pytest.main(['-s','-n 3','./testcase/test_case.py','--html=report/{}_report.html'.format(now)])
+    # 并发暂时存在问题
+    pytest.main(['-s','./testcase/test_case.py','--html=report/{}_report.html'.format(now)])

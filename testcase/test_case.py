@@ -46,29 +46,29 @@ class Test(unittest.TestCase):
         self.saves[key] = value
         logger.info("保存 {}=>{} 到全局变量池".format(key,value))
 
-    def build_param(self,string):
+    def build_param(self,s,id):
         '''
         识别${key}并替换成全局变量池的value,处理__func()函数助手
-        :param str: 待替换的字符串
+        :param s: 待替换的字符串
         :return:
         '''
 
         #遍历所有取值并做替换
-        keys = re.findall(self.EXPR, string)
+        keys = re.findall(self.EXPR, s)
         for key in keys:
-            value = self.saves.get(key)
-            string = string.replace('${'+key+'}',str(value))
+            value = self.saves.get(key+"-"+id)
+            s = s.replace('${'+key+'}',str(value))
 
 
         #遍历所有函数助手并执行，结束后替换
-        funcs = re.findall(self.FUNC_EXPR, string)
+        funcs = re.findall(self.FUNC_EXPR, s)
         for func in funcs:
             fuc = func.split('__')[1]
             fuc_name = fuc.split("(")[0]
             fuc = fuc.replace(fuc_name,fuc_name.lower())
             value = eval(fuc)
-            string = string.replace(func,str(value))
-        return string
+            s = s.replace(func,str(value))
+        return s
 
     def execute_setup_sql(self,db_connect,setup_sql):
         '''
@@ -122,24 +122,26 @@ class Test(unittest.TestCase):
         # 实例化测试基类，自带cookie保持
         cls.request = BaseTest()
 
+
     for sheet_data in excel_data:
+
         sheet = sheet_data.get("sheet")
         sdata = sheet_data.get("data")
+        id = uuid()
         exec(F'''
 @data(*{sdata})
 @unpack
 def test_{sheet}(self,descrption,url,method,headers,cookies,params,body,file,verify,saves,
                                                                             dbtype,db,setup_sql,teardown_sql):
-    print(descrption,url,method,headers,cookies,params,body,file,verify,saves,
-                                                                            dbtype,db,setup_sql,teardown_sql)     
-        
+          
     logger.info("用例描述====>"+descrption)
-    url = self.build_param(url)
-    headers = self.build_param(headers)
-    params = self.build_param(params)
-    body = self.build_param(body)
-    setup_sql = self.build_param(setup_sql)
-    teardown_sql = self.build_param(teardown_sql)
+    
+    url = self.build_param(url,"{id}")
+    headers = self.build_param(headers,"{id}")
+    params = self.build_param(params,"{id}")
+    body = self.build_param(body,"{id}")
+    setup_sql = self.build_param(setup_sql,"{id}")
+    teardown_sql = self.build_param(teardown_sql,"{id}")
 
     params = eval(params) if params else params
     headers = eval(headers) if headers else headers
@@ -180,7 +182,7 @@ def test_{sheet}(self,descrption,url,method,headers,cookies,params,body,file,ver
             # 切割字符串 如 key=$.data
             key = save.split("=")[0]
             jsp = save.split("=")[1]
-            self.save_date(res.json(), key, jsp)
+            self.save_date(res.json(), key+"-"+"{id}", jsp)
     if verify:
         # 遍历verify:
         for ver in verify.split(";"):
@@ -207,7 +209,7 @@ def test_{sheet}(self,descrption,url,method,headers,cookies,params,body,file,ver
     #最后关闭mysql数据库连接
     if db_connect:
         db_connect.db.close()
-
+        
         '''
                  )
 
