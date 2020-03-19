@@ -41,13 +41,13 @@ class BaseTest(requests.Session):
         try:
             res = self.request('GET',url,headers=headers,params=params,cookies=cookies,verify=False)
             self.api_log('GET',url,headers=headers,params=params,cookies=cookies,
-                     code=res.status_code,res_text=res.text,res_header=res.headers)
+                     code=res.status_code,res_text=res.content,res_header=res.headers)
             return res
         except Exception as e:
             logger.error("接口请求异常,原因：{}".format(e))
             raise e
 
-    def post_request(self,url,headers=None,data=None,json=None,params=None,cookies=None):
+    def post_request(self,url,headers=None,json=None,params=None,cookies=None):
         '''
         post请求方法
         :param url: 接口地址
@@ -58,10 +58,12 @@ class BaseTest(requests.Session):
         :return:
         '''
         try:
-            res = self.request('POST', url, headers=headers, params=params,data=data,
-                               json=json,cookies=cookies,verify=False)
+            if json:
+                res = self.request('POST', url, headers=headers,json=json,cookies=cookies,verify=False)
+            else:
+                res = self.request('POST', url, headers=headers, data=params, cookies=cookies, verify=False)
             self.api_log('POST', url, headers=headers, params=params,json=json, cookies=cookies,
-                         code=res.status_code, res_text=res.text,res_header=res.headers)
+                         code=res.status_code, res_text=res.content,res_header=res.headers)
             return res
 
         except Exception as e:
@@ -82,7 +84,7 @@ class BaseTest(requests.Session):
             res = self.request('PUT', url, headers=headers, params=params,data=data,
                                json=json,cookies=cookies,verify=False)
             self.api_log('PUT', url, headers=headers, params=params,json=json, cookies=cookies,
-                         code=res.status_code, res_text=res.text,res_header=res.headers)
+                         code=res.status_code, res_text=res.content,res_header=res.headers)
             return res
 
         except Exception as e:
@@ -103,7 +105,7 @@ class BaseTest(requests.Session):
             res = self.request('DELETE', url, headers=headers, params=params,data=data,
                                json=json,cookies=cookies,verify=False)
             self.api_log('DELETE', url, headers=headers, params=params,json=json, cookies=cookies,
-                         code=res.status_code, res_text=res.text,res_header=res.headers)
+                         code=res.status_code, res_text=res.content,res_header=res.headers)
             return res
 
         except Exception as e:
@@ -121,7 +123,7 @@ class BaseTest(requests.Session):
                 res = self.request('POST', url, headers=headers, params=params,data=data,
                                files=files,json=json,cookies=cookies,verify=False)
             self.api_log('UPLOAD', url, headers=headers, params=params,json=data,file=filepath, cookies=cookies,
-                         code=res.status_code, res_text=res.text,res_header=res.headers)
+                         code=res.status_code, res_text=res.content,res_header=res.headers)
             return res
 
         except Exception as e:
@@ -136,7 +138,7 @@ class BaseTest(requests.Session):
         :return:
         '''
         try:
-            assert actual == expected
+            assert str(actual) == str(expected)
             logger.info("断言成功,实际值：{} 等于 预期值：{}".format(actual, expected))
         except AssertionError as e:
             logger.error("断言失败,实际值：{} 不等于 预期值：{}".format(actual,expected))
@@ -180,7 +182,7 @@ class BaseTest(requests.Session):
         logger.info("Cookies====>{}".format(dumps(cookies,indent=4)))
         logger.info("接口响应状态码====>{}".format(code))
         logger.info("接口响应头为====>{}".format(res_header))
-        logger.info("接口响应体为====>{}".format(res_text))
+        logger.info("接口响应体为====>{}".format(res_text.decode("unicode_escape")))
 
 
 

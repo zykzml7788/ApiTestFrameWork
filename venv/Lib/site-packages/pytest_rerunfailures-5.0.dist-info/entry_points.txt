@@ -1,3 +1,0 @@
-[pytest11]
-rerunfailures = pytest_rerunfailures
-

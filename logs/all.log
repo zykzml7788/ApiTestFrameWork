@@ -1,0 +1,175 @@
+2020-03-19 09:45:48,978 - <string>[line:7] - INFO: 用例描述====>ag_通用版本登录
+2020-03-19 09:45:49,053 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:174] - INFO: 请求方式====>POST
+2020-03-19 09:45:49,053 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:175] - INFO: 请求地址====>https://account.youcloud.com/login/match
+2020-03-19 09:45:49,053 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:176] - INFO: 请求头====>{
+    "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"
+}
+2020-03-19 09:45:49,054 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:177] - INFO: 请求参数====>{
+    "account": "10000000007",
+    "password": "zAgD6Z3IYqOs9MEitTu",
+    "image_code": "",
+    "keep_login": "1"
+}
+2020-03-19 09:45:49,054 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:178] - INFO: 请求体====>""
+2020-03-19 09:45:49,054 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:179] - INFO: 上传附件为======>None
+2020-03-19 09:45:49,054 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:180] - INFO: Cookies====>""
+2020-03-19 09:45:49,054 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:181] - INFO: 接口响应状态码====>400
+2020-03-19 09:45:49,054 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:182] - INFO: 接口响应头为====>{'Server': 'openresty', 'Date': 'Thu, 19 Mar 2020 01:45:49 GMT', 'Content-Type': 'application/json', 'Content-Length': '105', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=30', 'Vary': 'Origin', 'X-Frame-Options': 'SAMEORIGIN'}
+2020-03-19 09:45:49,054 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:183] - INFO: 接口响应体为====>{"error": {"message": {"account": ["This field is required."], "password": ["This field is required."]}}}
+2020-03-19 09:47:23,163 - <string>[line:7] - INFO: 用例描述====>ag_通用版本登录
+2020-03-19 09:47:23,244 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:176] - INFO: 请求方式====>POST
+2020-03-19 09:47:23,244 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:177] - INFO: 请求地址====>https://account.youcloud.com/login/match
+2020-03-19 09:47:23,244 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:178] - INFO: 请求头====>{
+    "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"
+}
+2020-03-19 09:47:23,245 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:179] - INFO: 请求参数====>{
+    "account": "10000000007",
+    "password": "zAgD6Z3IYqOs9MEitTu",
+    "image_code": "",
+    "keep_login": "1"
+}
+2020-03-19 09:47:23,245 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:180] - INFO: 请求体====>""
+2020-03-19 09:47:23,245 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:181] - INFO: 上传附件为======>None
+2020-03-19 09:47:23,245 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:182] - INFO: Cookies====>""
+2020-03-19 09:47:23,245 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:183] - INFO: 接口响应状态码====>400
+2020-03-19 09:47:23,246 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:184] - INFO: 接口响应头为====>{'Server': 'openresty', 'Date': 'Thu, 19 Mar 2020 01:47:23 GMT', 'Content-Type': 'application/json', 'Content-Length': '105', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=30', 'Vary': 'Origin', 'X-Frame-Options': 'SAMEORIGIN'}
+2020-03-19 09:47:23,246 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:185] - INFO: 接口响应体为====>{"error": {"message": {"account": ["This field is required."], "password": ["This field is required."]}}}
+2020-03-19 09:48:10,578 - <string>[line:7] - INFO: 用例描述====>ag_通用版本登录
+2020-03-19 09:48:11,000 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:176] - INFO: 请求方式====>POST
+2020-03-19 09:48:11,001 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:177] - INFO: 请求地址====>https://account.youcloud.com/login/match
+2020-03-19 09:48:11,001 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:178] - INFO: 请求头====>{
+    "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"
+}
+2020-03-19 09:48:11,001 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:179] - INFO: 请求参数====>{
+    "account": "10000000007",
+    "password": "zAgD6Z3IYqOs9MEitTu",
+    "image_code": "",
+    "keep_login": "1"
+}
+2020-03-19 09:48:11,001 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:180] - INFO: 请求体====>""
+2020-03-19 09:48:11,001 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:181] - INFO: 上传附件为======>None
+2020-03-19 09:48:11,001 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:182] - INFO: Cookies====>""
+2020-03-19 09:48:11,002 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:183] - INFO: 接口响应状态码====>200
+2020-03-19 09:48:11,002 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:184] - INFO: 接口响应头为====>{'Server': 'openresty', 'Date': 'Thu, 19 Mar 2020 01:48:10 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=30', 'Vary': 'Accept-Encoding, Origin, Cookie', 'X-Frame-Options': 'SAMEORIGIN', 'Set-Cookie': 'sessionid=g1e9j3fzmoa8tguxs1ur82558p8sos2d; expires=Fri, 20-Mar-2020 01:48:10 GMT; HttpOnly; Max-Age=86400; Path=/; Secure', 'Content-Encoding': 'gzip'}
+2020-03-19 09:48:11,002 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:185] - INFO: 接口响应体为====>{"c": 3, "msg": "\u5bc6\u7801\u9519\u8bef"}
+2020-03-19 09:48:11,003 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:142] - INFO: 断言成功,实际值：密码错误 等于 预期值：密码错误
+2020-03-19 09:50:10,191 - <string>[line:7] - INFO: 用例描述====>ag_通用版本登录
+2020-03-19 09:50:10,721 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:176] - INFO: 请求方式====>POST
+2020-03-19 09:50:10,722 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:177] - INFO: 请求地址====>https://account.youcloud.com/login/match
+2020-03-19 09:50:10,722 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:178] - INFO: 请求头====>{
+    "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"
+}
+2020-03-19 09:50:10,722 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:179] - INFO: 请求参数====>{
+    "account": "10000000007",
+    "password": "zAgD6Z3IYqOs9MEitTu",
+    "image_code": "",
+    "keep_login": "1"
+}
+2020-03-19 09:50:10,722 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:180] - INFO: 请求体====>""
+2020-03-19 09:50:10,722 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:181] - INFO: 上传附件为======>None
+2020-03-19 09:50:10,722 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:182] - INFO: Cookies====>""
+2020-03-19 09:50:10,722 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:183] - INFO: 接口响应状态码====>200
+2020-03-19 09:50:10,723 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:184] - INFO: 接口响应头为====>{'Server': 'openresty', 'Date': 'Thu, 19 Mar 2020 01:50:10 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=30', 'Vary': 'Accept-Encoding, Origin, Cookie', 'X-Frame-Options': 'SAMEORIGIN', 'Set-Cookie': 'sessionid=e41ctfcbzwkcyutpyshzbmnxui55zjjo; expires=Fri, 20-Mar-2020 01:50:10 GMT; HttpOnly; Max-Age=86400; Path=/; Secure', 'Content-Encoding': 'gzip'}
+2020-03-19 09:50:10,723 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:185] - INFO: 接口响应体为====>{"c": 3, "msg": "\u5bc6\u7801\u9519\u8bef"}
+2020-03-19 09:50:10,724 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:142] - INFO: 断言成功,实际值：密码错误 等于 预期值：密码错误
+2020-03-19 09:50:10,724 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:144] - ERROR: 断言失败,实际值：3 不等于 预期值：1
+2020-03-19 09:50:19,677 - <string>[line:7] - INFO: 用例描述====>ag_通用版本登录
+2020-03-19 09:50:20,146 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:176] - INFO: 请求方式====>POST
+2020-03-19 09:50:20,146 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:177] - INFO: 请求地址====>https://account.youcloud.com/login/match
+2020-03-19 09:50:20,146 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:178] - INFO: 请求头====>{
+    "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"
+}
+2020-03-19 09:50:20,147 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:179] - INFO: 请求参数====>{
+    "account": "10000000007",
+    "password": "zAgD6Z3IYqOs9MEitTu",
+    "image_code": "",
+    "keep_login": "1"
+}
+2020-03-19 09:50:20,147 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:180] - INFO: 请求体====>""
+2020-03-19 09:50:20,147 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:181] - INFO: 上传附件为======>None
+2020-03-19 09:50:20,147 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:182] - INFO: Cookies====>""
+2020-03-19 09:50:20,147 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:183] - INFO: 接口响应状态码====>200
+2020-03-19 09:50:20,147 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:184] - INFO: 接口响应头为====>{'Server': 'openresty', 'Date': 'Thu, 19 Mar 2020 01:50:20 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=30', 'Vary': 'Accept-Encoding, Origin, Cookie', 'X-Frame-Options': 'SAMEORIGIN', 'Set-Cookie': 'sessionid=a3vl774utgpphi8qh8svzii70glmdv5v; expires=Fri, 20-Mar-2020 01:50:20 GMT; HttpOnly; Max-Age=86400; Path=/; Secure', 'Content-Encoding': 'gzip'}
+2020-03-19 09:50:20,147 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:185] - INFO: 接口响应体为====>{"c": 3, "msg": "\u5bc6\u7801\u9519\u8bef"}
+2020-03-19 09:50:20,148 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:142] - INFO: 断言成功,实际值：密码错误 等于 预期值：密码错误
+2020-03-19 09:50:20,148 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:144] - ERROR: 断言失败,实际值：3 不等于 预期值：3
+2020-03-19 09:51:18,755 - <string>[line:7] - INFO: 用例描述====>ag_通用版本登录
+2020-03-19 09:51:19,151 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:176] - INFO: 请求方式====>POST
+2020-03-19 09:51:19,151 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:177] - INFO: 请求地址====>https://account.youcloud.com/login/match
+2020-03-19 09:51:19,152 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:178] - INFO: 请求头====>{
+    "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"
+}
+2020-03-19 09:51:19,152 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:179] - INFO: 请求参数====>{
+    "account": "10000000007",
+    "password": "zAgD6Z3IYqOs9MEitTu",
+    "image_code": "",
+    "keep_login": "1"
+}
+2020-03-19 09:51:19,152 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:180] - INFO: 请求体====>""
+2020-03-19 09:51:19,152 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:181] - INFO: 上传附件为======>None
+2020-03-19 09:51:19,152 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:182] - INFO: Cookies====>""
+2020-03-19 09:51:19,153 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:183] - INFO: 接口响应状态码====>200
+2020-03-19 09:51:19,153 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:184] - INFO: 接口响应头为====>{'Server': 'openresty', 'Date': 'Thu, 19 Mar 2020 01:51:19 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=30', 'Vary': 'Accept-Encoding, Origin, Cookie', 'X-Frame-Options': 'SAMEORIGIN', 'Set-Cookie': 'sessionid=fqbbxj80g4j1kter2cwx22t3w494g39j; expires=Fri, 20-Mar-2020 01:51:19 GMT; HttpOnly; Max-Age=86400; Path=/; Secure', 'Content-Encoding': 'gzip'}
+2020-03-19 09:51:19,153 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:185] - INFO: 接口响应体为====>b'{"c": 3, "msg": "\\u5bc6\\u7801\\u9519\\u8bef"}'
+2020-03-19 09:51:19,154 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:142] - INFO: 断言成功,实际值：密码错误 等于 预期值：密码错误
+2020-03-19 09:51:19,154 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:144] - ERROR: 断言失败,实际值：3 不等于 预期值：3
+2020-03-19 09:53:15,444 - <string>[line:7] - INFO: 用例描述====>ag_通用版本登录
+2020-03-19 09:53:15,868 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:176] - INFO: 请求方式====>POST
+2020-03-19 09:53:15,868 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:177] - INFO: 请求地址====>https://account.youcloud.com/login/match
+2020-03-19 09:53:15,868 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:178] - INFO: 请求头====>{
+    "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"
+}
+2020-03-19 09:53:15,869 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:179] - INFO: 请求参数====>{
+    "account": "10000000007",
+    "password": "zAgD6Z3IYqOs9MEitTu",
+    "image_code": "",
+    "keep_login": "1"
+}
+2020-03-19 09:53:15,869 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:180] - INFO: 请求体====>""
+2020-03-19 09:53:15,869 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:181] - INFO: 上传附件为======>None
+2020-03-19 09:53:15,869 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:182] - INFO: Cookies====>""
+2020-03-19 09:53:15,869 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:183] - INFO: 接口响应状态码====>200
+2020-03-19 09:53:15,869 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:184] - INFO: 接口响应头为====>{'Server': 'openresty', 'Date': 'Thu, 19 Mar 2020 01:53:15 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=30', 'Vary': 'Accept-Encoding, Origin, Cookie', 'X-Frame-Options': 'SAMEORIGIN', 'Set-Cookie': 'sessionid=vtutlg035i90o34xl52f355dx1t02d8p; expires=Fri, 20-Mar-2020 01:53:15 GMT; HttpOnly; Max-Age=86400; Path=/; Secure', 'Content-Encoding': 'gzip'}
+2020-03-19 09:53:15,869 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:185] - INFO: 接口响应体为====>{"c": 3, "msg": "\u5bc6\u7801\u9519\u8bef"}
+2020-03-19 09:53:15,870 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:142] - INFO: 断言成功,实际值：密码错误 等于 预期值：密码错误
+2020-03-19 09:53:15,870 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:142] - INFO: 断言成功,实际值：3 等于 预期值：3
+2020-03-19 09:59:13,075 - <string>[line:7] - INFO: 用例描述====>ag_通用版本登录
+2020-03-19 09:59:13,566 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:176] - INFO: 请求方式====>POST
+2020-03-19 09:59:13,567 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:177] - INFO: 请求地址====>https://account.youcloud.com/login/match
+2020-03-19 09:59:13,568 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:178] - INFO: 请求头====>{
+    "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"
+}
+2020-03-19 09:59:13,569 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:179] - INFO: 请求参数====>{
+    "account": "10000000007",
+    "password": "zAgD6Z3IYqOs9MEitTu",
+    "image_code": "",
+    "keep_login": "1"
+}
+2020-03-19 09:59:13,569 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:180] - INFO: 请求体====>""
+2020-03-19 09:59:13,569 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:181] - INFO: 上传附件为======>None
+2020-03-19 09:59:13,570 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:182] - INFO: Cookies====>""
+2020-03-19 09:59:13,570 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:183] - INFO: 接口响应状态码====>200
+2020-03-19 09:59:13,570 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:184] - INFO: 接口响应头为====>{'Server': 'openresty', 'Date': 'Thu, 19 Mar 2020 01:59:13 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=30', 'Vary': 'Accept-Encoding, Origin, Cookie', 'X-Frame-Options': 'SAMEORIGIN', 'Set-Cookie': 'sessionid=0b6akzvzl83iu9ekmtttsydyyypb7vo4; expires=Fri, 20-Mar-2020 01:59:13 GMT; HttpOnly; Max-Age=86400; Path=/; Secure', 'Content-Encoding': 'gzip'}
+2020-03-19 09:59:13,571 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:185] - INFO: 接口响应体为====>{"c": 3, "msg": "\u5bc6\u7801\u9519\u8bef"}
+2020-03-19 09:59:13,574 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:142] - INFO: 断言成功,实际值：密码错误 等于 预期值：密码错误
+2020-03-19 09:59:13,574 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:142] - INFO: 断言成功,实际值：3 等于 预期值：3
+2020-03-19 10:00:07,261 - <string>[line:7] - INFO: 用例描述====>ag_通用版本登录
+2020-03-19 10:00:07,736 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:176] - INFO: 请求方式====>POST
+2020-03-19 10:00:07,736 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:177] - INFO: 请求地址====>https://account.youcloud.com/login/match
+2020-03-19 10:00:07,736 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:178] - INFO: 请求头====>{
+    "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"
+}
+2020-03-19 10:00:07,736 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:179] - INFO: 请求参数====>{
+    "account": "10000000007",
+    "password": "zAgD6Z3IYqOs9MEitTu",
+    "image_code": "",
+    "keep_login": "1"
+}
+2020-03-19 10:00:07,737 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:180] - INFO: 请求体====>""
+2020-03-19 10:00:07,737 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:181] - INFO: 上传附件为======>None
+2020-03-19 10:00:07,737 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:182] - INFO: Cookies====>""
+2020-03-19 10:00:07,737 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:183] - INFO: 接口响应状态码====>200
+2020-03-19 10:00:07,737 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:184] - INFO: 接口响应头为====>{'Server': 'openresty', 'Date': 'Thu, 19 Mar 2020 02:00:07 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=30', 'Vary': 'Accept-Encoding, Origin, Cookie', 'X-Frame-Options': 'SAMEORIGIN', 'Set-Cookie': 'sessionid=t4q458qeyc5ktuxfpfyr21kr4u4gbl12; expires=Fri, 20-Mar-2020 02:00:07 GMT; HttpOnly; Max-Age=86400; Path=/; Secure', 'Content-Encoding': 'gzip'}
+2020-03-19 10:00:07,740 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:185] - INFO: 接口响应体为====>{"c": 3, "msg": "密码错误"}
+2020-03-19 10:00:07,741 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:142] - INFO: 断言成功,实际值：密码错误 等于 预期值：密码错误
+2020-03-19 10:00:07,741 - /Users/zhangyingkai/PycharmProjects/ApiTestFrameWork1/core/testBase.py[line:142] - INFO: 断言成功,实际值：3 等于 预期值：3
