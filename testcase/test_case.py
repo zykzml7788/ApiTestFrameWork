@@ -31,7 +31,7 @@ class Test(unittest.TestCase):
     # 识别函数助手
     FUNC_EXPR = '__.*?\(.*?\)'
 
-    def save_date(self,source,key,jexpr):
+    def save_date(self,source,key,jexpr:str):
         '''
         提取参数并保存至全局变量池
         :param source: 目标字符串
@@ -39,12 +39,16 @@ class Test(unittest.TestCase):
         :param jexpr: jsonpath表达式
         :return:
         '''
-        value = jsonpath.jsonpath(source,jexpr)
-        if not value:
-            raise KeyError("该jsonpath未匹配到值,请确认接口响应和jsonpath正确性")
-        value = value[0]
-        self.saves[key] = value
-        logger.info("保存 {}=>{} 到全局变量池".format(key,value))
+        if jexpr.startswith("$"):
+            value = jsonpath.jsonpath(source,jexpr)
+            if not value:
+                raise KeyError("该jsonpath未匹配到值,请确认接口响应和jsonpath正确性")
+            value = value[0]
+            self.saves[key] = value
+            logger.info("保存 {}=>{} 到全局变量池".format(key,value))
+        else:
+            self.saves[key] = jexpr
+            logger.info("保存 {}=>{} 到全局变量池".format(key, jexpr))
 
     def build_param(self,s,id):
         '''

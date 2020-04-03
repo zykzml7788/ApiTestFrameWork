@@ -17,3 +17,5 @@ if __name__ == '__main__':
     now = time.strftime("%Y-%m-%d_%H_%M_%S")
     # 并发暂时存在问题
     pytest.main(['-s','./testcase/test_case.py','--html=report/{}_report.html'.format(now)])
+
+
