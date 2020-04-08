@@ -29,7 +29,7 @@ pytest-metadata==1.8.0
 pytest-rerunfailures==5.0
 pytest-xdist==1.29.0
 pytz==2018.9
-PyYAML==3.13
+PyYAML==5.1
 pyzmq==18.0.1
 query-string==1.0.2
 redis==3.2.1
