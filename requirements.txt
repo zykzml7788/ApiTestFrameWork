@@ -10,7 +10,7 @@ get==2019.4.13
 idna==2.7
 importlib-metadata==0.20
 jsonpath==0.81
-lxml==4.4.1
+lxml==4.6.3
 more-itertools==7.2.0
 namedlist==1.7
 packaging==19.1
